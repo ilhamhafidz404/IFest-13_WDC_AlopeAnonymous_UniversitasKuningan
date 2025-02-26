@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <h1 class="text-green-600 text-8xl">asasa</h1>
+    <h1 class="text-green-600 text-8xl">asasdsdasdsa</h1>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
