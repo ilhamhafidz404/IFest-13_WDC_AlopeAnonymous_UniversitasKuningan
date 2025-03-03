@@ -6,7 +6,7 @@
       >
         <div class="lg:col-span-2">
           <img
-            src="../assets/logo 4.png"
+            src="/image/logo/logo 3.png"
             alt="Logo"
             class="w-32 mx-auto md:mx-0"
           />

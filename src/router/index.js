@@ -2,7 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 
 // page
 import Home from "../views/home.vue";
-import listProduk from "../views/listProduk.vue";
+import Login from "../views/login.vue";
+import Register from "../views/register.vue";
+import Chatbot from "../views/chatbot.vue";
+import ListProduk from "../views/listProduk.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,7 +18,22 @@ const router = createRouter({
     {
       path: "/listProduk",
       name: "listProduk",
-      component: listProduk,
+      component: ListProduk,
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login,
+    },
+    {
+      path: "/register",
+      name: "register",
+      component: Register,
+    },
+    {
+      path: "/chatbot",
+      name: "chatbot",
+      component: Chatbot,
     },
   ],
 });

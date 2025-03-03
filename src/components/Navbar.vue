@@ -89,15 +89,15 @@
 </template>
 
 <script>
-import logo2 from "../assets/logo 2.png";
-import logo5 from "../assets/logo 5.png";
+import logo1 from "/image/logo/logo 1.png";
+import logo2 from "/image/logo/logo 2.png";
 
 export default {
   data() {
     return {
       scrolled: false,
       isMenuOpen: false,
-      logo: logo2,
+      logo: logo1,
     };
   },
   mounted() {
@@ -109,7 +109,7 @@ export default {
   methods: {
     handleScroll() {
       this.scrolled = window.scrollY > 0;
-      this.logo = this.scrolled ? logo5 : logo2;
+      this.logo = this.scrolled ? logo2 : logo1;
     },
   },
 };

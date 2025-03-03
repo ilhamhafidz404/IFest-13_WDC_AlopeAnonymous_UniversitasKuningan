@@ -2,7 +2,7 @@
   <header class="relative w-full h-[80vh] bg-cover bg-center">
     <div class="relative h-screen w-full">
       <img
-        src="../assets/img/hero.png"
+        src="/image/hero.png"
         alt="Background Image"
         class="absolute inset-0 w-full h-full object-cover"
       />
@@ -45,7 +45,7 @@
         <!-- Gambar -->
         <div class="relative flex justify-end">
           <img
-            src="../assets/img/about.png"
+            src="/image/page/about.png"
             alt="Proses Membatik"
             class="w-5/6 pt-16"
           />
@@ -74,7 +74,7 @@
             </div>
             <div class="w-1/3 xl:block hidden">
               <img
-                src="../assets/img/kain2.png"
+                src="/image/page/1.png"
                 alt=""
                 class="w-full h-[200px] object-cover rounded"
               />
@@ -90,7 +90,7 @@
             </div>
             <div class="w-1/3 xl:block hidden">
               <img
-                src="../assets/img/pria.png"
+                src="/image/page/2.png"
                 alt=""
                 class="w-full h-[200px] object-cover rounded"
               />
@@ -112,7 +112,7 @@
           <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
             <div class="w-1/3 xl:block hidden">
               <img
-                src="../assets/img/perca1.png"
+                src="/image/page/3.png"
                 alt=""
                 class="w-full h-[200px] object-cover rounded"
               />
@@ -130,7 +130,7 @@
           <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
             <div class="w-1/3 xl:block hidden">
               <img
-                src="../assets/img/aa1.png"
+                src="/image/page/4.png"
                 alt=""
                 class="w-full h-[200px] object-cover rounded"
               />
@@ -166,7 +166,7 @@
         <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:gap-5 gap-2">
           <div class="relative rounded overflow-hidden group cursor-pointer">
             <img
-              src="../assets/img/kain2.png"
+              src="/image/page/1.png"
               alt=""
               class="w-full h-[300px] object-cover"
             />
@@ -188,7 +188,7 @@
             class="hoverCard relative rounded overflow-hidden cursor-pointer xl:block hidden group"
           >
             <img
-              src="../assets/img/kain2.png"
+              src="/image/page/1.png"
               alt=""
               class="w-full h-[300px] object-cover"
             />
@@ -210,7 +210,7 @@
             class="hoverCard relative rounded overflow-hidden cursor-pointer lg:block hidden group"
           >
             <img
-              src="../assets/img/kain2.png"
+              src="/image/page/1.png"
               alt=""
               class="w-full h-[300px] object-cover"
             />
@@ -234,10 +234,10 @@
     <!--CARD PRODUK-->
     <section class="py-5 px-5">
       <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
+        <h2 class="text-3xl text-primary font-semibold text-gold italic mb-3">
           Temukan Produk
         </h2>
-        <p class="text-gray-700 dark:text-gray-300 mb-8">
+        <p class="text-gray-700 dark:text-gray-300 mb-3">
           Temukan beragam batik baru dan second berkualitas <br />
           di Sundara Batik, pilihan elegan yang ramah <br />
           lingkungan dan berkelanjutan.
@@ -250,7 +250,7 @@
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
-                src="../assets/img/kemeja1.png"
+                src="/image/produk/kemeja 1.png"
                 alt="Batik Motif Kawung"
               />
               <div class="p-4">
@@ -269,7 +269,7 @@
                     >Baru</span
                   >
                   <img
-                    src="../assets/img/logo1.png"
+                    src="/image/logo/logo 2.png"
                     alt="Logo"
                     class="w-20 h-8"
                   />
@@ -283,7 +283,7 @@
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
-                src="../assets/img/kemeja1.png"
+                src="/image/produk/kemeja 1.png"
                 alt="Batik Parang"
               />
               <div class="p-4">
@@ -302,7 +302,7 @@
                     >Second</span
                   >
                   <img
-                    src="../assets/img/logo1.png"
+                    src="/image/logo/logo 2.png"
                     alt="Logo"
                     class="w-20 h-8"
                   />
@@ -316,7 +316,7 @@
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
-                src="../assets/img/kemeja1.png"
+                src="/image/produk/kemeja 1.png"
                 alt="Batik Mega Mendung"
               />
               <div class="p-4">
@@ -335,7 +335,7 @@
                     >Baru</span
                   >
                   <img
-                    src="../assets/img/logo1.png"
+                    src="/image/logo/logo 2.png"
                     alt="Logo"
                     class="w-20 h-8"
                   />
@@ -349,7 +349,7 @@
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
-                src="../assets/img/kemeja1.png"
+                src="/image/produk/kemeja 1.png"
                 alt="Batik Limited Edition"
               />
               <div class="p-4">
@@ -368,7 +368,7 @@
                     >Limited</span
                   >
                   <img
-                    src="../assets/img/logo1.png"
+                    src="/image/logo/logo 2.png"
                     alt="Logo"
                     class="w-20 h-8"
                   />
