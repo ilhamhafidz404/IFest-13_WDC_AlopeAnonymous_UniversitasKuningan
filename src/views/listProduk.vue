@@ -13,7 +13,9 @@
       </p>
     </div>
   </section>
-  <section class="grid md:grid-cols-4 container mx-auto gap-10 my-10">
+  <section
+    class="grid md:grid-cols-4 lg:px-10 px-10 container mx-auto gap-10 my-10"
+  >
     <div>
       <div class="border-primary border-2 py-4 px-3 rounded">
         <div class="relative">

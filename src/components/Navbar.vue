@@ -30,10 +30,16 @@
 
       <!-- Tombol ikon di layar besar -->
       <div class="hidden md:flex space-x-4">
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        <button
+          :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+          @click="$router.push('/keranjang')"
+        >
           <i class="fas fa-shopping-cart text-xl"></i>
         </button>
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        <button
+          :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+          @click="$router.push('/profile')"
+        >
           <i class="fas fa-user text-xl"></i>
         </button>
         <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">

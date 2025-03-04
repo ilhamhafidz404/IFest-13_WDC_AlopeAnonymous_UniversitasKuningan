@@ -1,5 +1,17 @@
 <template>
-  <div class="mt-20 h-screen w-full flex flex-col">
+  <section
+    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
+    style="background-image: url('/image/hero.png')"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="font-sekunder text-4xl my-5">Selamat Datang di Chat Bot!</h1>
+      <p>
+        Asisten virtual yang siap membantu Anda menjelajahi koleksi batik kami.
+      </p>
+    </div>
+  </section>
+  <div class="h-screen w-full flex flex-col">
     <div class="room flex-1 overflow-auto p-4 bg-gray-100 space-y-4">
       <div class="chat space-y-4">
         <!-- Sender Messages -->
