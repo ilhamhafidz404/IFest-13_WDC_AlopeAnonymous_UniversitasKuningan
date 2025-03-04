@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 sm:p-6 bg-gray-100 min-h-screen">
+  <div class="font-poppins mt-20 sm:p-6 bg-white min-h-screen">
     <h1 class="text-xl sm:text-2xl font-bold mb-2">Keranjang Belanja</h1>
     <p class="text-gray-900 font-semibold mb-6 text-sm sm:text-base">
       <a href="#">3 batik di keranjangmu</a>
@@ -7,7 +7,7 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div class="lg:col-span-2">
-        <div class="bg-white rounded-lg shadow p-4 sm:p-6">
+        <div class="bg-gray-100 rounded-lg shadow p-4 sm:p-6">
           <div class="overflow-x-auto">
             <!-- Checkbox Pilih Semua -->
             <div class="flex items-center mb-4">
@@ -87,7 +87,7 @@
 
       <!-- Kalkulasi Pengiriman -->
       <div class="lg:col-span-1">
-        <div class="bg-white rounded-lg shadow p-4 sm:p-6">
+        <div class="bg-gray-100 rounded-lg shadow p-4 sm:p-6">
           <h2 class="font-bold mb-4 text-lg">Kalkulasi Pengiriman</h2>
           <select
             v-model="selectedProvince"
@@ -174,7 +174,7 @@ export default {
           size: "XL",
           price: 350000,
           quantity: 2,
-          image: "/kemeja1.png",
+          image: "/image/produk/kemeja 1.png",
         },
         {
           id: 2,
@@ -184,7 +184,7 @@ export default {
           size: "L",
           price: 425000,
           quantity: 1,
-          image: "/wanita1.png",
+          image: "/image/page/wanita1.png",
         },
         {
           id: 3,
@@ -194,7 +194,7 @@ export default {
           size: "XL",
           price: 425000,
           quantity: 1,
-          image: "/wanita1.png",
+          image: "/image/page/wanita1.png",
         },
       ],
       selectedItems: [],

@@ -1,57 +1,157 @@
 <template>
-    <nav
-      :class="{
-        'bg-transparent': !scrolled,
-        'bg-white/30 backdrop-blur-md': scrolled,
-      }"
-      class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
-    >
-      <div class="container mx-auto px-5 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <img src="../assets/img/logo.png" alt="Logo" class="h-8" />
-          <span class="text-white font-semibold">Sundara Batik</span>
-        </div>
-        <ul class="flex space-x-6 text-white">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#" class="hover:underline">Product</a></li>
-          <li><a href="#" class="hover:underline">Chat Bot</a></li>
-          <li><a href="#" class="hover:underline">ReBatik</a></li>
-          <li><a href="#" class="hover:underline">Jual</a></li>
-        </ul>
-        <div class="flex space-x-4">
-          <button class="text-white"><i class="fas fa-shopping-cart"></i></button>
-          <button class="text-white"><i class="fas fa-user"></i></button>
-          <button class="text-white"><i class="fas fa-sign-out-alt"></i></button>
-        </div>
+  <nav
+    :class="{
+      'bg-transparent text-white': !scrolled,
+      'bg-white text-primary shadow-md': scrolled,
+    }"
+    class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+  >
+    <div class="container mx-auto py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img :src="logo" alt="Logo" class="h-12 transition-all duration-300" />
       </div>
-    </nav>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        scrolled: false,
-      };
+
+      <!-- Menu pada layar besar -->
+      <ul
+        :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+        class="hidden md:flex space-x-6"
+      >
+        <li><router-link to="/" class="nav-link">Home</router-link></li>
+        <li>
+          <router-link to="ListProduk" class="nav-link">Product</router-link>
+        </li>
+        <li>
+          <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
+        </li>
+        <li><router-link to="" class="nav-link">ReBatik</router-link></li>
+        <li><router-link to="" class="nav-link">Jual</router-link></li>
+      </ul>
+
+      <!-- Tombol ikon di layar besar -->
+      <div class="hidden md:flex space-x-4">
+        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+          <i class="fas fa-shopping-cart text-xl"></i>
+        </button>
+        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+          <i class="fas fa-user text-xl"></i>
+        </button>
+        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+          <i class="fas fa-sign-out-alt text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button
+        @click="isMenuOpen = !isMenuOpen"
+        :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+        class="md:hidden focus:outline-none transition-all duration-300"
+      >
+        <i
+          :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"
+          class="text-2xl"
+        ></i>
+      </button>
+    </div>
+
+    <!-- Menu Responsif (Mobile) -->
+    <div
+      v-if="isMenuOpen"
+      class="md:hidden bg-white text-primary shadow-md absolute top-full left-0 w-full py-4 transition-all"
+    >
+      <ul class="flex flex-col items-center space-y-4">
+        <li>
+          <router-link to="/" class="nav-link" @click="isMenuOpen = false"
+            >Home</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            to="ListProduk"
+            class="nav-link"
+            @click="isMenuOpen = false"
+            >Product</router-link
+          >
+        </li>
+        <li>
+          <router-link to="chatbot" class="nav-link" @click="isMenuOpen = false"
+            >Chat Bot</router-link
+          >
+        </li>
+        <li>
+          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+            >ReBatik</router-link
+          >
+        </li>
+        <li>
+          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+            >Jual</router-link
+          >
+        </li>
+      </ul>
+
+      <div class="flex justify-center space-x-6 mt-4">
+        <router-link to="Keranjang" class="text-primary">
+          <i class="fas fa-shopping-cart text-xl"></i>
+        </router-link>
+        <button class="text-primary">
+          <i class="fas fa-user text-xl"></i>
+        </button>
+        <button class="text-primary">
+          <i class="fas fa-sign-out-alt text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+import logo1 from "/image/logo/logo 1.png";
+import logo2 from "/image/logo/logo 2.png";
+
+export default {
+  data() {
+    return {
+      scrolled: false,
+      isMenuOpen: false,
+      logo: logo1,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.scrolled = window.scrollY > 0;
+      this.logo = this.scrolled ? logo2 : logo1;
     },
-    mounted() {
-      window.addEventListener("scroll", this.handleScroll);
-    },
-    beforeDestroy() {
-      window.removeEventListener("scroll", this.handleScroll);
-    },
-    methods: {
-      handleScroll() {
-        this.scrolled = window.scrollY > 0;
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  nav {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
-  </style>
-  
+  },
+};
+</script>
+
+<style scoped>
+/* Efek garis bawah dari kiri ke kanan */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+</style>

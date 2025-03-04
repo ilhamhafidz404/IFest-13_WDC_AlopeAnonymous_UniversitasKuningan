@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-xl container mx-auto sm:text-2xl font-bold mt-6 mb-2">
+  <h1 class="text-xl mt-24 container mx-auto sm:text-2xl font-bold mb-2">
     Check Out
   </h1>
   <p
@@ -106,32 +106,44 @@
         <div class="space-y-4">
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" checked class="accent-primary" />
-            <img src="/bca.png" alt="Bank BCA" class="w-10 h-10" />
+            <img src="/image/icon/bca.png" alt="Bank BCA" class="w-10 h-10" />
             <span class="text-lg">Bank BCA</span>
           </label>
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" class="accent-primary" />
-            <img src="/bni.png" alt="Bank BNI" class="w-10 h-10" />
+            <img src="/image/icon/bni.png" alt="Bank BNI" class="w-10 h-10" />
             <span class="text-lg">Bank BNI</span>
           </label>
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" class="accent-primary" />
-            <img src="/mandiri.png" alt="Bank Mandiri" class="w-10 h-10" />
+            <img
+              src="/image/icon/mandiri.png"
+              alt="Bank Mandiri"
+              class="w-10 h-10"
+            />
             <span class="text-lg">Bank Mandiri</span>
           </label>
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" class="accent-primary" />
-            <img src="/bri.png" alt="Bank BRI" class="w-10 h-10" />
+            <img src="/image/icon/bri.png" alt="Bank BRI" class="w-10 h-10" />
             <span class="text-lg">Bank BRI</span>
           </label>
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" class="accent-primary" />
-            <img src="/permata.png" alt="Bank Permata" class="w-10 h-10" />
+            <img
+              src="/image/icon/permata.png"
+              alt="Bank Permata"
+              class="w-10 h-10"
+            />
             <span class="text-lg">Bank Permata</span>
           </label>
           <label class="flex items-center space-x-4">
             <input type="radio" name="bank" class="accent-primary" />
-            <img src="/lainya.png" alt="Bank Lainnya" class="w-10 h-10" />
+            <img
+              src="/image/icon/lainya.png"
+              alt="Bank Lainnya"
+              class="w-10 h-10"
+            />
             <span class="text-lg">Bank Lainnya</span>
           </label>
         </div>
@@ -188,7 +200,7 @@ export default {
           size: "XL",
           price: 350000,
           quantity: 2,
-          image: "/kemeja1.png",
+          image: "/image/produk/kemeja 1.png",
         },
         {
           id: 2,
@@ -198,7 +210,7 @@ export default {
           size: "L",
           price: 425000,
           quantity: 1,
-          image: "wanita1.png",
+          image: "/image/page/wanita1.png",
         },
       ],
     };
