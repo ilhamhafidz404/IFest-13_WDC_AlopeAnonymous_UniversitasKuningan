@@ -1,5 +1,5 @@
 <template>
-    <div class="container h-screen w-full flex flex-col">
+    <div class=" h-screen w-full flex flex-col">
         <div class="room flex-1 overflow-auto p-4 bg-gray-100 space-y-4">
             <div class="chat space-y-4">
                 <!-- Sender Messages -->

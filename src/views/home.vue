@@ -8,10 +8,12 @@
       />
       <div class="absolute inset-0 bg-black bg-opacity-45"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="text-6xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
           Melestarikan Budaya
         </h1>
-        <h1 class="text-6xl text-sekunder font-semibold">Merawat Bumi</h1>
+        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
+          Merawat Bumi
+        </h1>
       </div>
     </div>
   </header>
@@ -21,7 +23,7 @@
     <section
       class="grid xl:grid-cols-1 items-center xl:gap-20 gap-10 dark:text-gray-100 py-16"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 md:mt-10 mt-6 md:grid-cols-2 gap-12 items-center">
         <!-- Konten Teks -->
         <div>
           <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
@@ -389,9 +391,7 @@
     </section>
 
     <!--TESTIMONI-->
-    <section
-      class="text-center mb-20 sm:py-20 py-10 xl:px-20 md:px-10 px-5"
-    >
+    <section class="text-center mb-20 sm:py-20 py-10 xl:px-20 md:px-10 px-5">
       <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
         Apa Kata Mereka
       </h2>
@@ -444,7 +444,6 @@
             class="w-[100px] h-[100px] rounded-full object-cover border border-primary absolute right-10 bottom-0 translate-y-1/3 borde"
           />
         </div>
-        
       </div>
     </section>
   </main>
