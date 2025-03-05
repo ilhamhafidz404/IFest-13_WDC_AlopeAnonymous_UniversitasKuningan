@@ -6,7 +6,7 @@
     }"
     class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
   >
-    <div class="container mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="container mx-auto py-4 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
         <img :src="logo" alt="Logo" class="h-12 transition-all duration-300" />
@@ -17,24 +17,28 @@
         :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         class="hidden md:flex space-x-6"
       >
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Product</a></li>
-        <li><a href="#" class="nav-link">Chat Bot</a></li>
-        <li><a href="#" class="nav-link">ReBatik</a></li>
-        <li><a href="#" class="nav-link">Jual</a></li>
+        <li><router-link to="/" class="nav-link">Home</router-link></li>
+        <li>
+          <router-link to="ListProduk" class="nav-link">Product</router-link>
+        </li>
+        <li>
+          <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
+        </li>
+        <li><router-link to="" class="nav-link">ReBatik</router-link></li>
+        <li><router-link to="" class="nav-link">Jual</router-link></li>
       </ul>
 
       <!-- Tombol ikon di layar besar -->
       <div class="hidden md:flex space-x-4">
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        <RouterLink to="keranjang" :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
           <i class="fas fa-shopping-cart text-xl"></i>
-        </button>
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        </RouterLink>
+        <RouterLink :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
           <i class="fas fa-user text-xl"></i>
-        </button>
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        </RouterLink>
+        <RouterLink :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </button>
+        </RouterLink>
       </div>
 
       <!-- Hamburger Button -->
@@ -57,26 +61,39 @@
     >
       <ul class="flex flex-col items-center space-y-4">
         <li>
-          <a href="#" class="nav-link" @click="isMenuOpen = false">Home</a>
+          <router-link to="/" class="nav-link" @click="isMenuOpen = false"
+            >Home</router-link
+          >
         </li>
         <li>
-          <a href="#" class="nav-link" @click="isMenuOpen = false">Product</a>
+          <router-link
+            to="ListProduk"
+            class="nav-link"
+            @click="isMenuOpen = false"
+            >Product</router-link
+          >
         </li>
         <li>
-          <a href="#" class="nav-link" @click="isMenuOpen = false">Chat Bot</a>
+          <router-link to="chatbot" class="nav-link" @click="isMenuOpen = false"
+            >Chat Bot</router-link
+          >
         </li>
         <li>
-          <a href="#" class="nav-link" @click="isMenuOpen = false">ReBatik</a>
+          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+            >ReBatik</router-link
+          >
         </li>
         <li>
-          <a href="#" class="nav-link" @click="isMenuOpen = false">Jual</a>
+          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+            >Jual</router-link
+          >
         </li>
       </ul>
 
       <div class="flex justify-center space-x-6 mt-4">
-        <button class="text-primary">
+        <router-link to="Keranjang" class="text-primary">
           <i class="fas fa-shopping-cart text-xl"></i>
-        </button>
+        </router-link>
         <button class="text-primary">
           <i class="fas fa-user text-xl"></i>
         </button>
@@ -89,6 +106,7 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
 import logo1 from "/image/logo/logo 1.png";
 import logo2 from "/image/logo/logo 2.png";
 

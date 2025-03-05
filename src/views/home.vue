@@ -23,7 +23,9 @@
     <section
       class="grid xl:grid-cols-1 items-center xl:gap-20 gap-10 dark:text-gray-100 py-16"
     >
-      <div class="grid grid-cols-1 md:mt-10 mt-6 md:grid-cols-2 gap-12 items-center">
+      <div
+        class="grid grid-cols-1 md:mt-10 mt-6 md:grid-cols-2 gap-12 items-center"
+      >
         <!-- Konten Teks -->
         <div>
           <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
@@ -38,7 +40,7 @@
           </p>
           <RouterLink
             to="listProduk"
-            class="mt-6 inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition"
+            class="mt-6 inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary transition duration-300 ease-in-out hover:text-white"
           >
             Belanja Sekarang <i class="fa-solid fa-arrow-right pl-2"></i>
           </RouterLink>
@@ -453,5 +455,8 @@ import { RouterLink } from "vue-router";
 
 export default {
   name: "home",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>

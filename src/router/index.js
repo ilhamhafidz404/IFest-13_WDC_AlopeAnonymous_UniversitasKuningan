@@ -6,6 +6,8 @@ import Login from "../views/login.vue";
 import Register from "../views/register.vue";
 import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
+import Keranjang from "../views/Keranjang.vue";
+import Checkout from "../views/Checkout.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -35,6 +37,16 @@ const router = createRouter({
       path: "/chatbot",
       name: "chatbot",
       component: Chatbot,
+    },
+    {
+      path: "/keranjang",
+      name: "keranjang",
+      component: Keranjang,
+    },
+    {
+      path: "/checkout",
+      name: "checkout",
+      component: Checkout,
     },
   ],
 });

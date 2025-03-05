@@ -1,13 +1,19 @@
 <template>
-  <section class="bg-primary text-center py-24 text-sekunder font-primary">
-    <h1 class="font-sekunder text-4xl my-5">List Produk</h1>
-    <p>
-      Temukan beragam batik berkualitas, dari batik baru, second, <br />
-      hingga koleksi ReBatik—mengusung tradisi, keberlanjutan, <br />
-      dan gaya ramah lingkungan.
-    </p>
+  <section
+    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
+    style="background-image: url('/image/hero.png')"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="font-sekunder text-4xl my-5">List Produk</h1>
+      <p>
+        Temukan beragam batik berkualitas, dari batik baru, second, <br />
+        hingga koleksi ReBatik—mengusung tradisi, keberlanjutan, <br />
+        dan gaya ramah lingkungan.
+      </p>
+    </div>
   </section>
-  <section class="grid grid-cols-4 container mx-auto gap-10 my-10">
+  <section class="grid md:grid-cols-4 container mx-auto gap-10 my-10">
     <div>
       <div class="border-primary border-2 py-4 px-3 rounded">
         <div class="relative">
@@ -22,12 +28,13 @@
         <h2 class="py-4">Gender</h2>
         <div class="flex flex-wrap gap-3">
           <button
-            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Pria
           </button>
+
           <button
-            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Wanita
           </button>
@@ -35,17 +42,17 @@
         <h2 class="py-4">Kategori</h2>
         <div class="flex gap-3 flex-wrap">
           <button
-            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Baru
           </button>
           <button
-            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Second
           </button>
           <button
-            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-6 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             ReBatik
           </button>
@@ -53,42 +60,42 @@
         <h2 class="py-4">Ukuran</h2>
         <div class="flex gap-3 flex-wrap">
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             XS
           </button>
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             M
           </button>
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             L
           </button>
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             XL
           </button>
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             2XL
           </button>
           <button
-            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            class="mx-2 px-5 py-3 text-sm font-medium rounded border border-primary transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             3XL
           </button>
         </div>
         <h2 class="py-4">Harga</h2>
-        <div class="mx-2 flex gap-4 mb-3">
+        <div class="mx-2 flex gap-4 mb-3 accent-primary">
           <input type="checkbox" />
           <p class="text-sm">Tinggi Ke Rendah</p>
         </div>
-        <div class="mx-2 flex gap-4">
+        <div class="mx-2 flex gap-4 accent-primary">
           <input type="checkbox" />
           <p class="text-sm">Rendah Ke Tinggi</p>
         </div>
@@ -119,7 +126,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -148,7 +155,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -177,7 +184,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -208,7 +215,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -237,7 +244,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -266,7 +273,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -297,7 +304,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -326,7 +333,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -355,7 +362,7 @@
                 class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
                 >Baru</span
               >
-              <img src="../assets/img/logo1.png" alt="Logo" class="w-20 h-8" />
+              <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
             </div>
           </div>
         </div>
@@ -363,3 +370,12 @@
     </div>
   </section>
 </template>
+<script>
+import { RouterLink } from "vue-router";
+
+export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+};
+</script>
