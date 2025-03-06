@@ -1,8 +1,8 @@
 <template>
-  <footer class="bg-primary text-sekunder py-10">
+  <footer class="bg-primary text-sekunder lg:py-8">
     <div class="container mx-auto px-6">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 text-center md:text-left"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:px-14 text-center md:text-left"
       >
         <div class="lg:col-span-2">
           <img
@@ -67,7 +67,7 @@
       </div>
       <div class="mt-6">
         <hr class="border-secondary" />
-        <p class="text-center text-sm py-3">
+        <p class="text-center text-sm pt-7">
           &copy; 2025 Alope Anonymous. All Rights Reserved.
         </p>
       </div>

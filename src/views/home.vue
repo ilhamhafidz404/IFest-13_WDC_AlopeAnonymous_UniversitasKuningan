@@ -20,18 +20,18 @@
 
   <main class="xl:px-20 md:px-10 px-5 pt-10">
     <!-- Tentang Kami -->
-    <section
-      class="grid xl:grid-cols-1 items-center xl:gap-20 gap-10 dark:text-gray-100 py-16"
-    >
+    <section class="grid xl:grid-cols-1 items-center xl:gap-20 gap-10 py-16">
       <div
-        class="grid grid-cols-1 md:mt-10 mt-6 md:grid-cols-2 gap-12 items-center"
+        class="grid grid-cols-1 md:mt-10 lg:p-0 md:p-14 mt-6 md:grid-cols-2 gap-12 items-center"
       >
         <!-- Konten Teks -->
         <div>
-          <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
+          <h2
+            class="lg:text-3xl text-2xl text-primary font-semibold text-gold italic mb-6 mt-14"
+          >
             Tentang Kami
           </h2>
-          <p class="text-am text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-700 leading-relaxed">
             Sundara Batik memadukan tradisi dan keberlanjutan dengan
             menghadirkan batik baru, second, serta batik dari kain organik dan
             pewarna alami yang aman. Melalui fitur ReBatik juga kami mengubah
@@ -51,13 +51,13 @@
           <img
             src="/image/page/about.png"
             alt="Proses Membatik"
-            class="w-5/6 pt-16"
+            class="lg:w-5/6 w-[90%] pt-16"
           />
         </div>
       </div>
     </section>
     <!--Alasan-->
-    <section class="xl:px-20 px-10 mb-20 container">
+    <section class="xl:px-20 sm:px-10 px-1 mb-20 container">
       <h2
         class="text-3xl text-primary font-semibold text-gold italic mb-6 text-center"
       >
@@ -71,7 +71,7 @@
               <h3 class="font-semibold text-gray-900">
                 Bahan Ramah Lingkungan
               </h3>
-              <p class="text-gray-700">
+              <p class="text-sm text-gray-700">
                 Kami menggunakan bahan organik dan pewarna alami, menciptakan
                 batik berkualitas yang ramah lingkungan.
               </p>
@@ -87,7 +87,7 @@
           <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
             <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
               <h5 class="font-semibold text-gray-900">Jual Batik Second</h5>
-              <p class="text-gray-700">
+              <p class="text-sm text-gray-700">
                 Kami menghadirkan batik second berkualitas, memberi kesempatan
                 kedua pada kain, dan mengurangi limbah tekstil.
               </p>
@@ -125,7 +125,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemanfaatan Sisa Bahan
               </h5>
-              <p class="text-gray-700">
+              <p class="text-sm text-gray-700">
                 Kami memanfaatkan sisa bahan untuk aksesori, patchwork, dan
                 produk kreatif, mengurangi limbah dan mendukung keberlanjutan.
               </p>
@@ -143,7 +143,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemberdayaan Pengrajin Batik
               </h5>
-              <p class="text-gray-700">
+              <p class="text-sm text-gray-700">
                 Kami memberdayakan pengrajin lokal dengan mendukung
                 kesejahteraan serta melestarikan warisan budaya.
               </p>
@@ -154,13 +154,13 @@
     </section>
     <!--Fitur Andalan-->
     <section
-      class="grid xl:grid-cols-3 items-center xl:gap-20 gap-10 dark:text-gray-100 mt-20 mb-20"
+      class="grid xl:grid-cols-3 items-center xl:gap-20 gap-10 mt-20 mb-20"
     >
       <div class="lg:col-span-1">
         <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
           Fitur Andalan
         </h2>
-        <p class="text-gray-700">
+        <p class="text-sm text-gray-700">
           Kami menghadirkan berbagai fitur unggulan yang dapat Anda nikmati,
           dengan komitmen kuat terhadap keberlanjutan dan kepedulian terhadap
           lingkungan.
@@ -236,22 +236,22 @@
       </div>
     </section>
     <!--CARD PRODUK-->
-    <section class="py-5 px-5">
+    <section class="py-5 sm:px-5">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl text-primary font-semibold text-gold italic mb-3">
           Temukan Produk
         </h2>
-        <p class="text-gray-700 dark:text-gray-300 mb-3">
-          Temukan beragam batik baru dan second berkualitas <br />
-          di Sundara Batik, pilihan elegan yang ramah <br />
+        <p class="text-sm text-gray-700 mb-3">
+          Temukan beragam batik baru dan second berkualitas
+          <br class="sm:block hidden" />
+          di Sundara Batik, pilihan elegan yang ramah
+          <br class="sm:block hidden" />
           lingkungan dan berkelanjutan.
         </p>
 
         <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-6">
           <a href="">
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-            >
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 class="w-full h-64 object-cover rounded-b"
                 src="/image/produk/kemeja 1.png"
@@ -282,9 +282,7 @@
             </div>
           </a>
           <a href="">
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-            >
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 class="w-full h-64 object-cover rounded-b"
                 src="/image/produk/kemeja 1.png"
@@ -315,9 +313,7 @@
             </div>
           </a>
           <a href="">
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-            >
+            <div class="bg-white rounded-lg shadow-lg overflow-hidde">
               <img
                 class="w-full h-64 object-cover rounded-b"
                 src="/image/produk/kemeja 1.png"
@@ -348,9 +344,7 @@
             </div>
           </a>
           <a href="">
-            <div
-              class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-            >
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 class="w-full h-64 object-cover rounded-b"
                 src="/image/produk/kemeja 1.png"
@@ -393,57 +387,59 @@
     </section>
 
     <!--TESTIMONI-->
-    <section class="text-center mb-20 sm:py-20 py-10 xl:px-20 md:px-10 px-5">
-      <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
+    <section class="text-center mb-20 sm:py-20 py-10 xl:px-10 md:px-5 px-3">
+      <h2
+        class="sm:text-3xl text-2xl text-primary font-semibold text-gold italic sm:mb-6 mb-0"
+      >
         Apa Kata Mereka
       </h2>
 
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mt-20 mt-10 xl:gap-20 gap-10"
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:mt-10 sm:mt-7 mt-5 xl:gap-10 gap-5"
       >
         <div
-          class="bg-gray-100 dark:bg-slate-800 dark:text-gray-200 text-left p-10 border border-primary rounded relative shadow"
+          class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
-          <p class="text-sm">
+          <p class="sm:text-sm text-xs">
             "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
             lingkungan."
           </p>
-          <h6 class="text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
+          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
           <img
             src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
             alt=""
-            class="w-[100px] h-[100px] rounded-full object-cover border border-primary absolute right-10 bottom-0 translate-y-1/3 borde"
+            class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
         </div>
         <div
-          class="bg-gray-100 dark:bg-slate-800 dark:text-gray-200 text-left p-10 border border-primary rounded relative shadow"
+          class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
-          <p class="text-sm">
+          <p class="sm:text-sm text-xs">
             "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
             lingkungan."
           </p>
-          <h6 class="text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
+          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
           <img
             src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
             alt=""
-            class="w-[100px] h-[100px] rounded-full object-cover border border-primary absolute right-10 bottom-0 translate-y-1/3 borde"
+            class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
         </div>
         <div
-          class="bg-gray-100 dark:bg-slate-800 dark:text-gray-200 text-left p-10 border border-primary rounded relative shadow"
+          class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
-          <p class="text-sm">
+          <p class="sm:text-sm text-xs">
             "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
             lingkungan."
           </p>
-          <h6 class="text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
+          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
           <img
             src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
             alt=""
-            class="w-[100px] h-[100px] rounded-full object-cover border border-primary absolute right-10 bottom-0 translate-y-1/3 borde"
+            class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
         </div>
       </div>
