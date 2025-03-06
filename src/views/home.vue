@@ -313,7 +313,7 @@
             </div>
           </a>
           <a href="">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidde">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 class="w-full h-64 object-cover rounded-b"
                 src="/image/produk/kemeja 1.png"
@@ -321,7 +321,11 @@
               />
               <div class="p-4">
                 <div class="flex justify-between items-center">
-                  <h3 class="text-lg font-semibold">Batik Mega Mendung</h3>
+                  <h3
+                    class="text-lg font-semibold text-ellipsis whitespace-nowrap overflow-hidden"
+                  >
+                    <span class="truncate"> Batik Mega... </span>
+                  </h3>
                   <p class="text-gray-600 text-sm">L-XL</p>
                 </div>
                 <p class="text-gray-800 font-bold">Rp. 400.000</p>
@@ -343,6 +347,7 @@
               </div>
             </div>
           </a>
+
           <a href="">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
