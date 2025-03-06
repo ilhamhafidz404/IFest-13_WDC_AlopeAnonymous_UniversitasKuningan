@@ -8,6 +8,7 @@ import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
 import Keranjang from "../views/Keranjang.vue";
 import Checkout from "../views/Checkout.vue";
+import ReBatik from "../views/reBatik.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,10 +24,14 @@ const router = createRouter({
       component: ListProduk,
     },
     {
+      path: "/reBatik",
+      name: "reBatik",
+      component: ReBatik,
+    },
+    {
       path: "/login",
       name: "login",
       component: Login,
-      
     },
     {
       path: "/register",

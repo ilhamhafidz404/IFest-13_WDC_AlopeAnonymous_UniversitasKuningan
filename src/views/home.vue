@@ -27,11 +27,11 @@
         <!-- Konten Teks -->
         <div>
           <h2
-            class="lg:text-3xl text-2xl text-primary font-semibold text-gold italic mb-6 mt-14"
+            class="lg:text-3xl text-2xl text-primary font-semibold italic mb-6 mt-14"
           >
             Tentang Kami
           </h2>
-          <p class="text-sm text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-700 leading-relaxed text-justify">
             Sundara Batik memadukan tradisi dan keberlanjutan dengan
             menghadirkan batik baru, second, serta batik dari kain organik dan
             pewarna alami yang aman. Melalui fitur ReBatik juga kami mengubah
@@ -160,7 +160,7 @@
         <h2 class="text-3xl text-primary font-semibold text-gold italic mb-6">
           Fitur Andalan
         </h2>
-        <p class="text-sm text-gray-700">
+        <p class="text-sm text-gray-700 text-justify">
           Kami menghadirkan berbagai fitur unggulan yang dapat Anda nikmati,
           dengan komitmen kuat terhadap keberlanjutan dan kepedulian terhadap
           lingkungan.

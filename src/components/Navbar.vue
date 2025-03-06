@@ -24,7 +24,7 @@
         <li>
           <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
         </li>
-        <li><router-link to="" class="nav-link">ReBatik</router-link></li>
+        <li><router-link to="reBatik" class="nav-link">ReBatik</router-link></li>
         <li><router-link to="" class="nav-link">Jual</router-link></li>
       </ul>
 
@@ -86,7 +86,7 @@
           >
         </li>
         <li>
-          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+          <router-link to="reBatik" class="nav-link" @click="isMenuOpen = false"
             >ReBatik</router-link
           >
         </li>
