@@ -17,12 +17,12 @@
         </div>
 
         <div class="px-4 rounded-lg border border-primary">
-          <h2 class="text-4xl font-bold text-gray-800 mt-10 mb-5">
+          <h2 class="text-3xl font-bold text-gray-800 mt-10 mb-5">
             Batik Motif Kawung
           </h2>
 
           <div class="flex mb-8">
-            <div class="mr-4 text-3xl">
+            <div class="mr-4 text-2xl">
               <span class="text-gray-900"> Rp. 350.000</span>
             </div>
           </div>
@@ -49,7 +49,7 @@
                 S
               </button>
               <button
-                class="bg-white text-gray-700 py-2 px-4 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
+                class="bg-white text-gray-700 py-2 px-3 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
               >
                 M
               </button>
@@ -59,12 +59,12 @@
                 L
               </button>
               <button
-                class="bg-white text-gray-700 py-2 px-4 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
+                class="bg-white text-gray-700 py-2 px-3 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
               >
                 XL
               </button>
               <button
-                class="bg-white text-gray-700 py-2 px-4 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
+                class="bg-white text-gray-700 py-2 px-2 rounded-md font-bold mr-2 border border-primary hover:bg-primary hover:text-gray-100"
               >
                 XXL
               </button>
@@ -97,8 +97,8 @@
             </div>
           </div>
 
-          <div class="flex -mx-2 mb-4">
-            <div class="w-1/2 px-2">
+          <div class="flex items-center -mx-2 mb-4">
+            <div class="px-2">
               <button
                 class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-md font-bold hover:bg-gray-300"
               >
@@ -106,11 +106,12 @@
               </button>
             </div>
             <div class="w-1/2 px-2">
-              <button
+              <router-link
+                to="Checkout"
                 class="w-full bg-primary text-white py-2 px-4 rounded-md font-bold hover:bg-primary/90"
               >
                 CheckOut Sekarang
-              </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -128,7 +129,14 @@
           commodi nulla. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Tempore esse unde maiores quae pariatur repellat beatae
           accusantium possimus voluptas maxime assumenda doloribus, natus labore
-          corrupti error itaque neque sunt ab.
+          corrupti error itaque neque sunt ab. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quia ex nisi, delectus ipsa, eum eaque
+          illo possimus totam corporis dolorem consequatur ad eligendi numquam
+          dolorum quos, dignissimos voluptatibus adipisci accusantium. Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Cum dolorum porro
+          voluptatem fugit placeat quibusdam, rem nobis alias beatae
+          repudiandae, reiciendis sint et cupiditate molestiae modi, minima
+          necessitatibus sapiente sed?
         </p>
       </div>
     </div>

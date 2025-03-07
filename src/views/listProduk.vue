@@ -104,7 +104,7 @@
       </div>
     </div>
     <div>
-      <a href="">
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -132,8 +132,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -161,8 +161,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -190,10 +190,10 @@
             </div>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div>
-      <a href="">
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -221,8 +221,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -250,8 +250,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -279,10 +279,10 @@
             </div>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div>
-      <a href="">
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -310,8 +310,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -339,8 +339,8 @@
             </div>
           </div>
         </div>
-      </a>
-      <a href="">
+      </router-link>
+      <router-link to="DetailProduk">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -368,7 +368,7 @@
             </div>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
   </section>
 </template>

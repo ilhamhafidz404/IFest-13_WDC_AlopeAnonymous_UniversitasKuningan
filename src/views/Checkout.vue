@@ -1,5 +1,6 @@
 <template>
-  <h1 class="text-xl mt-24 container mx-auto sm:text-2xl font-bold mb-2">
+  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
+  <h1 class="text-xl mt-5 container mx-auto sm:text-2xl font-bold mb-2">
     Check Out
   </h1>
   <p
@@ -47,7 +48,7 @@
     <div
       class="border-t pt-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
     >
-      <h5 class="text-base sm:text-lg">Pesan Untuk Penjual</h5>
+      <h5 class="text-base sm:text-sm">Pesan Untuk Penjual</h5>
       <input
         type="text"
         placeholder="Kasih Catatan! (Opsional)"

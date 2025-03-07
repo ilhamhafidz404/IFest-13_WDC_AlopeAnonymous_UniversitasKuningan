@@ -1,5 +1,6 @@
 <template>
-  <div class="font-poppins mt-20 sm:p-6 bg-white min-h-screen">
+  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
+  <div class="font-poppins sm:p-6 bg-white min-h-screen">
     <h1 class="text-xl sm:text-2xl font-bold mb-2">Keranjang Belanja</h1>
     <p class="text-gray-900 font-semibold mb-6 text-sm sm:text-base">
       <a href="#">3 batik di keranjangmu</a>
@@ -145,15 +146,16 @@
                 <span>Rp. 2.000</span>
               </div>
             </div>
-            <div class="border-t mt-6 pt-4 font-bold flex justify-between">
+            <div class="border-t mt-6 pt-4 font-bold flex justify-between mb-5">
               <span>TOTAL</span>
               <span>Rp. 1.039.500</span>
             </div>
-            <button
-              class="w-full mt-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition"
+            <router-link
+              to="Checkout"
+              class="w-full mt-10 py-3 px-3 flex justify-center bg-primary text-white rounded-md hover:bg-primary/90 transition"
             >
               Check Out
-            </button>
+            </router-link>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import ListProduk from "../views/listProduk.vue";
 import Keranjang from "../views/Keranjang.vue";
 import Checkout from "../views/Checkout.vue";
 import DetailProduk from "../views/DetailProduk.vue";
+import Profile from "../views/Profile.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -52,6 +53,11 @@ const router = createRouter({
       path: "/detailproduk",
       name: "detailproduk",
       component: DetailProduk,
+    },
+    {
+      path: "/profile",
+      name: "profile",
+      component: Profile,
     },
   ],
 });

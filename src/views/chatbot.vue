@@ -18,9 +18,7 @@
         <div
           class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
         >
-          <div
-            class="message p-4 rounded-l-full rounded-tr-full border bg-[#B89158] text-white"
-          >
+          <div class="message p-4 rounded-xl border bg-primary text-white">
             <p>Hallo!</p>
           </div>
           <div
@@ -46,14 +44,10 @@
             />
           </div>
           <div class="space-y-2">
-            <div
-              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
-            >
+            <div class="message p-4 rounded-xl border bg-primary text-white">
               <p>Hallo Juga!</p>
             </div>
-            <div
-              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
-            >
+            <div class="message p-4 rounded-xl border bg-primary text-white">
               <p>Ada yang bisa dibantu?</p>
             </div>
           </div>
@@ -63,9 +57,7 @@
         <div
           class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
         >
-          <div
-            class="message p-4 rounded-l-full rounded-tr-full border bg-[#B89158] text-white"
-          >
+          <div class="message p-4 rounded-xl border bg-[#B89158] text-white">
             <p>Bagaimana cara menukar batik?</p>
           </div>
           <div
@@ -116,7 +108,7 @@
           />
         </button>
         <input
-          class="flex-1 h-[40px] px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          class="flex-1 h-[40px] px-3 border rounded-xl outline-none focus:ring focus:ring-primary text-sm md:text-base"
           type="text"
           placeholder="Tulis Pesan ..."
         />
