@@ -110,7 +110,7 @@
       <div>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
@@ -139,7 +139,7 @@
         </a>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
@@ -168,96 +168,7 @@
         </a>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-          >
-            <img
-              class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Motif Kawung"
-            />
-            <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
-                <p class="text-gray-600 text-sm">S-3XL</p>
-              </div>
-              <p class="text-gray-800 font-bold">Rp. 350.000</p>
-              <div class="flex items-center mt-2">
-                <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">9.5 (100)</span>
-              </div>
-              <div class="flex items-center justify-between mt-2">
-                <span
-                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
-                  >Baru</span
-                >
-                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div>
-        <a href="">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
-          >
-            <img
-              class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Motif Kawung"
-            />
-            <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
-                <p class="text-gray-600 text-sm">S-3XL</p>
-              </div>
-              <p class="text-gray-800 font-bold">Rp. 350.000</p>
-              <div class="flex items-center mt-2">
-                <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">9.5 (100)</span>
-              </div>
-              <div class="flex items-center justify-between mt-2">
-                <span
-                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
-                  >Baru</span
-                >
-                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
-          >
-            <img
-              class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Motif Kawung"
-            />
-            <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
-                <p class="text-gray-600 text-sm">S-3XL</p>
-              </div>
-              <p class="text-gray-800 font-bold">Rp. 350.000</p>
-              <div class="flex items-center mt-2">
-                <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">9.5 (100)</span>
-              </div>
-              <div class="flex items-center justify-between mt-2">
-                <span
-                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
-                  >Baru</span
-                >
-                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
@@ -288,7 +199,7 @@
       <div>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
@@ -317,7 +228,7 @@
         </a>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
@@ -346,7 +257,96 @@
         </a>
         <a href="">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-b"
+              src="/image/produk/kemeja 1.png"
+              alt="Batik Motif Kawung"
+            />
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+                <p class="text-gray-600 text-sm">S-3XL</p>
+              </div>
+              <p class="text-gray-800 font-bold">Rp. 350.000</p>
+              <div class="flex items-center mt-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-600 ml-1">9.5 (100)</span>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <span
+                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
+                  >Baru</span
+                >
+                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-b"
+              src="/image/produk/kemeja 1.png"
+              alt="Batik Motif Kawung"
+            />
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+                <p class="text-gray-600 text-sm">S-3XL</p>
+              </div>
+              <p class="text-gray-800 font-bold">Rp. 350.000</p>
+              <div class="flex items-center mt-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-600 ml-1">9.5 (100)</span>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <span
+                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
+                  >Baru</span
+                >
+                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden mb-10"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-b"
+              src="/image/produk/kemeja 1.png"
+              alt="Batik Motif Kawung"
+            />
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+                <p class="text-gray-600 text-sm">S-3XL</p>
+              </div>
+              <p class="text-gray-800 font-bold">Rp. 350.000</p>
+              <div class="flex items-center mt-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-600 ml-1">9.5 (100)</span>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <span
+                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
+                  >Baru</span
+                >
+                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
           >
             <img
               class="w-full h-64 object-cover rounded-b"

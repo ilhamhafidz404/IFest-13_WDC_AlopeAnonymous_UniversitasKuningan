@@ -11,8 +11,8 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Chat Bot</h1>
       <p>
-        Selamat datang! Ingin tahu lebih banyak tentang <br />
-        batik ramah lingkungan dan cara mendukung keberlanjutan? <br />
+        Selamat datang! Ingin tahu lebih banyak tentang <br class="hidden md:inline"/>
+        batik ramah lingkungan dan cara mendukung keberlanjutan? <br class="hidden md:inline"/>
         Tanyakan apa saja!
       </p>
     </div>

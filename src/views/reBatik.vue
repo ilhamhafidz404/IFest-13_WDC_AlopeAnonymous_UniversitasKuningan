@@ -11,8 +11,8 @@ import { RouterLink } from "vue-router";
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">ReBatik</h1>
       <p>
-        ReBatik mengolah kain perca atau batik rusak menjadi <br />
-        tas dan aksesori, mengurangi limbah tekstil, serta <br />
+        ReBatik mengolah kain perca atau batik rusak menjadi <br class="hidden md:inline"/>
+        tas dan aksesori, mengurangi limbah tekstil, serta <br class="hidden md:inline"/>
         melestarikan batik secara berkelanjutan.
       </p>
     </div>
