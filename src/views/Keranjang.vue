@@ -7,14 +7,16 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Keranjang</h1>
       <p>
-        Cek kembali produk pilihan Anda dan jadilah 
-        bagian <br /> dari perubahan! Dukung keberlanjutan 
-        dengan <br /> memilih batik ramah lingkungan
+        Cek kembali produk pilihan Anda dan jadilah bagian <br />
+        dari perubahan! Dukung keberlanjutan dengan <br />
+        memilih batik ramah lingkungan
       </p>
     </div>
   </section>
   <div class="container mx-auto mt-10 sm:p-6 min-h-screen">
-    <h1 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">Keranjang Belanja</h1>
+    <h1 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">
+      Keranjang Belanja
+    </h1>
     <p class="text-gray-700 font-semibold mb-6 text-sm sm:text-base">
       3 batik di keranjangmu
     </p>
@@ -62,14 +64,17 @@
                       />
                       <div class="ml-2 sm:ml-4 mt-2 sm:mt-0 text-left">
                         <h2 class="text-sm sm:text-md">{{ item.gender }}</h2>
-                        <RouterLink to="" class="text-sm sm:text-lg font-semibold">
+                        <RouterLink
+                          to=""
+                          class="text-sm sm:text-lg font-semibold"
+                        >
                           {{ item.name }}
                         </RouterLink>
                         <p class="text-md sm:text-sm text-gray-700">
-                          Kondisi  {{ item.condition }}
+                          Kondisi {{ item.condition }}
                         </p>
                         <p class="text-md sm:text-sm text-gray-700">
-                          Ukuran  {{ item.size }}
+                          Ukuran {{ item.size }}
                         </p>
                       </div>
                     </div>
@@ -101,11 +106,13 @@
 
       <!-- Kalkulasi Pengiriman -->
       <div class="lg:col-span-1">
-        <div class="bg-gray-100 rounded-lg shadow p-4 sm:p-6">
-          <h2 class="font-bold mb-4 text-lg">Kalkulasi Pengiriman</h2>
+        <div class="border-primary border-2 rounded-lg shadow p-4 sm:p-6">
+          <h2 class="font-bold mb-4 text-lg text-gray-900">
+            Kalkulasi Pengiriman
+          </h2>
           <select
             v-model="selectedProvince"
-            class="w-full mb-2 p-2 border rounded-md"
+            class="w-full mb-2 p-2 border rounded-md border-primary text-gray-700"
           >
             <option disabled value="">Pilih Provinsi</option>
             <option v-for="province in provinces" :key="province">
@@ -114,7 +121,7 @@
           </select>
           <select
             v-model="selectedCity"
-            class="w-full mb-2 p-2 border rounded-md"
+            class="w-full mb-2 p-2 border rounded-md border-primary text-gray-700"
           >
             <option disabled value="">Pilih Kabupaten / Kota</option>
             <option v-for="city in cities" :key="city">{{ city }}</option>
@@ -122,9 +129,11 @@
           <input
             type="text"
             placeholder="Kode Pos"
-            class="w-full mb-4 p-2 border rounded-md"
+            class="w-full mb-4 p-2 border rounded-md border-primary"
           />
-          <button class="w-full py-2 bg-primary text-white rounded-md">
+          <button
+            class="w-full py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+          >
             Update
           </button>
 
@@ -136,17 +145,17 @@
               >ReBatik</a
             >
           </p>
-          <select class="w-full p-2 mb-2 border rounded-md">
+          <select class="w-full p-2 mb-2 border-primary border-2 rounded-md">
             <option>ReBatik Discount 10%</option>
           </select>
-          <div class="bg-primary/80 text-white p-4 sm:p-6 rounded-md shadow-lg">
-            <h2 class="font-bold text-lg sm:text-2xl mb-6">Total Belanja</h2>
+          <div class=" border-2 border-primary p-4 sm:p-6 rounded-md shadow-lg">
+            <h2 class="font-semibold text-lg sm:text-2xl mb-6">Total Belanja</h2>
             <div class="text-xs sm:text-sm space-y-4">
               <div class="flex justify-between">
                 <span>Subtotal keranjang</span>
                 <span>Rp. 1.125.000</span>
               </div>
-              <div class="flex justify-between">
+              <div class="flex justify-between text-red-600">
                 <span>Voucher Diskon</span>
                 <span>- Rp. 112.500</span>
               </div>
@@ -164,10 +173,10 @@
               <span>Rp. 1.039.500</span>
             </div>
             <button
-              class="w-full mt-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition"
-            >
-              Check Out
-            </button>
+            class="w-full mt-2 py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+          >
+            Checkout
+          </button>
           </div>
         </div>
       </div>
@@ -176,7 +185,7 @@
 </template>
 
 <script>
-import { RouterLink } from 'vue-router';
+import { RouterLink } from "vue-router";
 
 export default {
   data() {

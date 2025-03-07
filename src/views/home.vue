@@ -8,10 +8,10 @@
       />
       <div class="absolute inset-0 bg-black bg-opacity-45"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
           Melestarikan Budaya
         </h1>
-        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
           Merawat Bumi
         </h1>
       </div>
@@ -71,7 +71,7 @@
               <h3 class="font-semibold text-gray-900">
                 Bahan Ramah Lingkungan
               </h3>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami menggunakan bahan organik dan pewarna alami, menciptakan
                 batik berkualitas yang ramah lingkungan.
               </p>
@@ -87,7 +87,7 @@
           <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
             <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
               <h5 class="font-semibold text-gray-900">Jual Batik Second</h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami menghadirkan batik second berkualitas, memberi kesempatan
                 kedua pada kain, dan mengurangi limbah tekstil.
               </p>
@@ -125,7 +125,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemanfaatan Sisa Bahan
               </h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami memanfaatkan sisa bahan untuk aksesori, patchwork, dan
                 produk kreatif, mengurangi limbah dan mendukung keberlanjutan.
               </p>
@@ -143,7 +143,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemberdayaan Pengrajin Batik
               </h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami memberdayakan pengrajin lokal dengan mendukung
                 kesejahteraan serta melestarikan warisan budaya.
               </p>
@@ -167,7 +167,7 @@
         </p>
       </div>
       <div class="lg:col-span-2">
-        <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:gap-5 gap-2">
+        <div class="grid xl:grid-cols-3 sm:grid-cols-2  md:gap-5 gap-2">
           <div class="relative rounded overflow-hidden group cursor-pointer">
             <img
               src="/image/page/1.png"
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer xl:block hidden group"
+            class="hoverCard relative rounded overflow-hidden cursor-pointer group"
           >
             <img
               src="/image/page/1.png"
@@ -211,7 +211,7 @@
             </div>
           </div>
           <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer lg:block hidden group"
+            class="hoverCard relative rounded overflow-hidden cursor-pointer group"
           >
             <img
               src="/image/page/1.png"

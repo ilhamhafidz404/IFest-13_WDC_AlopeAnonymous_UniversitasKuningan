@@ -14,7 +14,7 @@
   </section>
   <div class="mt-20 h-screen w-full flex flex-col">
     <div
-      class="room flex-1 overflow-auto p-4 border border-primary rounded mx-10 space-y-4"
+      class="room flex-1 overflow-auto p-4 border border-primary relative rounded mx-10 space-y-4"
     >
       <div class="chat space-y-4">
         <!-- Sender Messages -->
@@ -24,7 +24,7 @@
             class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
           >
             <div
-              class="message p-4 rounded-l-full rounded-tr-full border bg-[#B89158] text-white"
+              class="message p-4 rounded-lg border bg-[#B89158] text-white"
             >
               <p>{{ message.text }}</p>
             </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="space-y-2">
               <div
-                class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
+                class="message p-4 rounded-lg border bg-primary text-white"
               >
                 <p>{{ message.text }}</p>
               </div>
@@ -109,7 +109,7 @@
         </div>
       </div>
       <!-- Input Form -->
-      <div class="type w-full border-t border-primary py-2">
+      <div class="type w-full border-primary py-2 px-10 absolute bottom-0 left-0 right-0">
         <div class="form w-full flex items-center space-x-2">
           <!-- <button class="paper-clip flex-none p-2">
             <img
@@ -119,7 +119,7 @@
             />
           </button> -->
           <input
-            class="flex-1 h-[40px] px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+            class="flex-1 h-[40px]  px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
             v-model="userInput"
             @keyup.enter="sendMessage"
             placeholder="Tulis pesan..."
