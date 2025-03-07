@@ -4,12 +4,16 @@
       'bg-transparent text-white': !scrolled,
       'bg-white text-primary shadow-md': scrolled,
     }"
-    class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    class="fixed top-0 left-0 w-full z-50 transition-all duration-300 lg:px-16 md:px-10 px-5"
   >
     <div class="container mx-auto py-4 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
-        <img :src="logo" alt="Logo" class="h-12 transition-all duration-300" />
+        <img
+          :src="logo"
+          alt="Logo"
+          class="lg:h-10 h-9 transition-all duration-300"
+        />
       </div>
 
       <!-- Menu pada layar besar -->
@@ -24,27 +28,27 @@
         <li>
           <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
         </li>
-        <li><router-link to="" class="nav-link">ReBatik</router-link></li>
+        <li>
+          <router-link to="reBatik" class="nav-link">ReBatik</router-link>
+        </li>
         <li><router-link to="" class="nav-link">Jual</router-link></li>
       </ul>
 
       <!-- Tombol ikon di layar besar -->
       <div class="hidden md:flex space-x-4">
-        <button
-          :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
-          @click="$router.push('/keranjang')"
-        >
+        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
           <i class="fas fa-shopping-cart text-xl"></i>
         </button>
-        <button
+        <RouterLink
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
-          @click="$router.push('/profile')"
         >
           <i class="fas fa-user text-xl"></i>
-        </button>
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        </RouterLink>
+        <RouterLink
+          :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+        >
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </button>
+        </RouterLink>
       </div>
 
       <!-- Hamburger Button -->
@@ -55,7 +59,7 @@
       >
         <i
           :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"
-          class="text-2xl"
+          class="lg:text-2xl text-lg"
         ></i>
       </button>
     </div>
@@ -85,7 +89,7 @@
           >
         </li>
         <li>
-          <router-link to="" class="nav-link" @click="isMenuOpen = false"
+          <router-link to="reBatik" class="nav-link" @click="isMenuOpen = false"
             >ReBatik</router-link
           >
         </li>
@@ -112,6 +116,7 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
 import logo1 from "/image/logo/logo 1.png";
 import logo2 from "/image/logo/logo 2.png";
 

@@ -5,7 +5,7 @@
 
 <template>
   <div
-    class="container bg-primary h-screen flex justify-center items-center px-4"
+    class="bg-primary h-screen flex justify-center items-center px-4"
   >
     <div
       class="h-auto md:h-5/6 w-full max-w-4xl flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl"

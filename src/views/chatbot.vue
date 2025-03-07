@@ -1,24 +1,14 @@
 <template>
-  <section
-    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
-    style="background-image: url('/image/hero.png')"
-  >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative z-10">
-      <h1 class="font-sekunder text-4xl my-5">Selamat Datang di Chat Bot!</h1>
-      <p>
-        Asisten virtual yang siap membantu Anda menjelajahi koleksi batik kami.
-      </p>
-    </div>
-  </section>
-  <div class="h-screen w-full flex flex-col">
+  <div class="mt-20 h-screen w-full flex flex-col">
     <div class="room flex-1 overflow-auto p-4 bg-gray-100 space-y-4">
       <div class="chat space-y-4">
         <!-- Sender Messages -->
         <div
           class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
         >
-          <div class="message p-4 rounded-xl border bg-primary text-white">
+          <div
+            class="message p-4 rounded-l-full rounded-tr-full border bg-[#B89158] text-white"
+          >
             <p>Hallo!</p>
           </div>
           <div
@@ -44,17 +34,21 @@
             />
           </div>
           <div class="space-y-2">
-            <div class="message p-4 rounded-xl border bg-primary text-white">
+            <div
+              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
+            >
               <p>Hallo Juga!</p>
             </div>
-            <div class="message p-4 rounded-xl border bg-primary text-white">
+            <div
+              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
+            >
               <p>Ada yang bisa dibantu?</p>
             </div>
           </div>
         </div>
 
         <!-- Sender Messages -->
-        <div
+        <!-- <div
           class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
         >
           <div class="message p-4 rounded-xl border bg-[#B89158] text-white">
@@ -69,10 +63,13 @@
               alt="User Icon"
             />
           </div>
-        </div>
+        </div> -->
 
         <!-- Typing Indicator -->
-        <div class="receiver flex w-[90%] md:w-1/2 space-x-3 items-end">
+        <div
+          v-if="isLoading"
+          class="receiver flex w-[90%] md:w-1/2 space-x-3 items-end"
+        >
           <div
             class="icon-user w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border bg-[#D9D9D9]"
           >
@@ -108,7 +105,7 @@
           />
         </button>
         <input
-          class="flex-1 h-[40px] px-3 border rounded-xl outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          class="flex-1 h-[40px] px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
           type="text"
           placeholder="Tulis Pesan ..."
         />
@@ -121,7 +118,80 @@
       </div>
     </div>
   </div>
+
+  <div>
+    <div>
+      <p v-if="isLoading">Loading...</p>
+    </div>
+  </div>
 </template>
+
+<script>
+import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
+
+export default {
+  data() {
+    return {
+      userInput: "",
+      isLoading: false,
+      messages: [
+        {
+          text: "Halo! Saya ALOPE chatbot, ada yang bisa saya bantu?",
+          sender: "bot",
+        },
+      ],
+      apiKey: import.meta.env.VITE_GEMINI_API_KEY, //ALOPEisAmazing
+      allowedKeywords: [
+        "pengertian dan informasi seputar batik hingga cara pembuatannya",
+        "pengelolaan sampah dari pakaian",
+        "cara membuat pakaian dari sampah",
+        "cara agar sampah bisa didaur ulang jadi pakaian",
+        "cara agar sampah bisa diminimalisir",
+        "kalimat sapaan seperti halo dan hai",
+      ],
+    };
+  },
+  methods: {
+    async sendMessage() {
+      this.isLoading = true;
+      if (!this.userInput.trim()) return;
+
+      const userText = this.userInput.trim();
+      this.messages.push({ text: userText, sender: "user" });
+
+      this.userInput = "";
+
+      try {
+        const genAI = new GoogleGenerativeAI(this.apiKey);
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+
+        const prompt = `
+          Kamu hanya boleh menjawab jika pertanyaan mengandung salah satu dari keyword berikut: ${this.allowedKeywords.join(
+            ", "
+          )}.
+          Jika pertanyaan tidak relevan dengan keyword tersebut, jawab: "Saya hanya dapat menjawab pertanyaan terkait dengan topik yang ditentukan."
+
+          Pertanyaan: ${userText}
+        `;
+
+        const result = await model.generateContent(prompt);
+        const botResponse = await result.response.text();
+
+        this.messages.push({ text: botResponse, sender: "bot" });
+      } catch (error) {
+        this.messages.push({
+          text: "Terjadi kesalahan, coba lagi nanti.",
+          sender: "bot",
+        });
+        console.error("Error:", error);
+      } finally {
+        this.userInput = "";
+        this.isLoading = false;
+      }
+    },
+  },
+};
+</script>
 
 <style>
 @keyframes bounce {

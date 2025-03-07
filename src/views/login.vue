@@ -1,55 +1,78 @@
-<!-- <script setup>
-  import logo from '../assets/sundara-logo.png';
-  import halfBgImage from '../assets/half-batik-bg.png';
-  import google from "../assets/google.png";
-</script> -->
-
 <template>
-<div class=" bg-primary h-screen flex justify-center items-center px-4">
-  <div class="h-auto md:h-5/6 w-full max-w-4xl flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl">
-    <div class="w-full md:w-1/2 flex justify-center items-center flex-col text-center text-white relative py-10"
-         :style="`background-image: url(); background-size: cover; background-position: center;`">
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="w-5/6 flex justify-center items-center flex-col text-center relative z-10">
-        <img src="../assets/half-batik-bg.png" alt="Sundara Batik Logo" class="w-20 sm:w-24 h-auto mb-4">
-        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">Selamat Datang Kembali</h1>
-        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Di Sundara Batik</h1>
-        <p class="text-sm sm:text-base">Temukan beragam batik baru dan second berkualitas di Sundara Batik, pilihan elegan yang ramah lingkungan dan berkelanjutan.</p>
+  <div class="bg-primary h-screen flex justify-center items-center px-4">
+    <div
+      class="h-auto md:h-5/6 w-full max-w-4xl flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl"
+    >
+      <div
+        class="w-full md:w-1/2 flex justify-center items-center flex-col text-center text-white relative py-10"
+        :style="`background-image: url(/image/half-batik-bg.png); background-size: cover; background-position: center;`"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div
+          class="w-5/6 flex justify-center items-center flex-col text-center relative z-10"
+        >
+          <img
+            src="/image/logo/logo 4.png"
+            alt="Sundara Batik Logo"
+            class="w-14 sm:w-12 h-auto mb-4"
+          />
+          <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+            Selamat Datang Kembali
+          </h1>
+          <h1 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
+            Di Sundara Batik
+          </h1>
+          <p class="text-sm sm:text-base">
+            Temukan beragam batik baru dan second berkualitas di Sundara Batik,
+            pilihan elegan yang ramah lingkungan dan berkelanjutan.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/2 bg-white flex justify-center items-center flex-col px-6 py-10"
+      >
+        <div class="w-80 max-w-sm">
+          <h1 class="text-2xl sm:text-3xl font-bold">LOG IN</h1>
+          <p class="text-sm sm:text-base text-gray-500 mb-3">
+            Tolong isi data anda
+          </p>
+          <label class="block text-gray-700">Email</label>
+          <input
+            type="email"
+            class="w-full border-b-2 border-black focus:outline-none focus:border-gray-700 py-2 mb-4"
+            placeholder="Masukkan email"
+          />
+          <label class="block text-gray-700">Password</label>
+          <input
+            type="password"
+            class="w-full border-b-2 border-black focus:outline-none focus:border-gray-700 py-2 mb-5"
+            placeholder="Masukkan password"
+          />
+          <div class="text-right text-blue-600 text-sm mb-3">
+            <a href="#">Lupa Password?</a>
+          </div>
+          <button
+            class="w-full bg-[#996F33] text-white py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:opacity-90"
+          >
+            Masuk
+          </button>
+          <div class="flex items-center my-3">
+            <hr class="w-full border-gray-300" />
+            <span class="px-3 text-gray-500 text-sm">Atau</span>
+            <hr class="w-full border-gray-300" />
+          </div>
+          <button
+            class="w-full flex items-center justify-center border border-gray-300 py-3 rounded-md shadow-md hover:bg-gray-100"
+          >
+            <img src="/image/icon/google.png" class="w-5 sm:w-6 h-auto mr-2" />
+            <span class="text-sm sm:text-base">Lanjut dengan Google</span>
+          </button>
+          <p class="text-center text-gray-600 mt-4 text-sm sm:text-base">
+            Tidak Punya Akun?
+            <a href="/register" class="text-blue-600">Register</a>
+          </p>
+        </div>
       </div>
     </div>
-    <div class="w-full md:w-1/2 bg-white flex justify-center items-center flex-col px-6 py-10">
-      <div class="w-80 max-w-sm">
-        <h1 class="text-2xl sm:text-3xl font-bold">LOG IN</h1>
-        <p class="text-sm sm:text-base text-gray-500 mb-3">Tolong isi data anda</p>
-        <label class="block text-gray-700">Email</label>
-        <input type="email"
-          class="w-full border-b-2 border-black focus:outline-none focus:border-gray-700 py-2 mb-4"
-          placeholder="Masukkan email">
-        <label class="block text-gray-700">Password</label>
-        <input type="password"
-          class="w-full border-b-2 border-black focus:outline-none focus:border-gray-700 py-2 mb-5"
-          placeholder="Masukkan password">
-        <div class="text-right text-blue-600 text-sm mb-3">
-          <a href="#">Lupa Password?</a>
-        </div>
-        <button class="w-full bg-[#996F33] text-white py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:opacity-90">
-          Masuk
-        </button>
-        <div class="flex items-center my-3">
-          <hr class="w-full border-gray-300">
-          <span class="px-3 text-gray-500 text-sm">Atau</span>
-          <hr class="w-full border-gray-300">
-        </div>
-        <button class="w-full flex items-center justify-center border border-gray-300 py-3 rounded-md shadow-md hover:bg-gray-100">
-          <img src="../assets/google.png" class="w-5 sm:w-6 h-auto mr-2">
-          <span class="text-sm sm:text-base">Lanjut dengan Google</span>
-        </button>
-        <p class="text-center text-gray-600 mt-4 text-sm sm:text-base">
-          Tidak Punya Akun? <a href="/register" class="text-blue-600">Register</a>
-        </p>
-      </div>
-    </div>
-    
   </div>
-</div>
 </template>

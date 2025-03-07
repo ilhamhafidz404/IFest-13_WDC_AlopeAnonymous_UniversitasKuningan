@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
-  <div class="font-poppins sm:p-6 bg-white min-h-screen">
+  <div class="font-poppins mt-20 sm:p-6 bg-white min-h-screen">
     <h1 class="text-xl sm:text-2xl font-bold mb-2">Keranjang Belanja</h1>
     <p class="text-gray-900 font-semibold mb-6 text-sm sm:text-base">
       <a href="#">3 batik di keranjangmu</a>
@@ -8,7 +7,7 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div class="lg:col-span-2">
-        <div class="bg-gray-100 rounded-lg shadow p-4 sm:p-6">
+        <div class="border-2 border-primary rounded-lg shadow p-4 sm:p-6">
           <div class="overflow-x-auto">
             <!-- Checkbox Pilih Semua -->
             <div class="flex items-center mb-4">
@@ -49,14 +48,17 @@
                       />
                       <div class="ml-2 sm:ml-4 mt-2 sm:mt-0 text-left">
                         <h2 class="text-sm sm:text-md">{{ item.gender }}</h2>
-                        <h2 class="text-lg sm:text-xl font-bold">
+                        <RouterLink
+                          to=""
+                          class="text-sm sm:text-lg font-semibold"
+                        >
                           {{ item.name }}
-                        </h2>
-                        <p class="text-md sm:text-md text-gray-900">
-                          Kondisi • {{ item.condition }}
+                        </RouterLink>
+                        <p class="text-md sm:text-sm text-gray-700">
+                          Kondisi {{ item.condition }}
                         </p>
-                        <p class="text-md sm:text-md text-gray-900">
-                          Ukuran • {{ item.size }}
+                        <p class="text-md sm:text-sm text-gray-700">
+                          Ukuran {{ item.size }}
                         </p>
                       </div>
                     </div>
@@ -164,6 +166,8 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
+
 export default {
   data() {
     return {
@@ -182,7 +186,7 @@ export default {
           id: 2,
           gender: "WANITA",
           name: "Batik Pekalongan",
-          condition: "Bekas",
+          condition: "Second",
           size: "L",
           price: 425000,
           quantity: 1,
@@ -192,7 +196,7 @@ export default {
           id: 3,
           gender: "WANITA",
           name: "Batik Pekalongan",
-          condition: "Bekas",
+          condition: "Second",
           size: "XL",
           price: 425000,
           quantity: 1,

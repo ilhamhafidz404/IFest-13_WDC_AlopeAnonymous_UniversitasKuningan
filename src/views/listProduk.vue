@@ -13,9 +13,7 @@
       </p>
     </div>
   </section>
-  <section
-    class="grid md:grid-cols-4 lg:px-10 px-10 container mx-auto gap-10 my-10"
-  >
+  <section class="grid md:grid-cols-4 container mx-auto gap-10 my-10">
     <div>
       <div class="border-primary border-2 py-4 px-3 rounded">
         <div class="relative">
@@ -104,7 +102,7 @@
       </div>
     </div>
     <div>
-      <router-link to="DetailProduk">
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -132,8 +130,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -161,8 +159,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -190,10 +188,10 @@
             </div>
           </div>
         </div>
-      </router-link>
+      </a>
     </div>
     <div>
-      <router-link to="DetailProduk">
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -221,8 +219,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -250,8 +248,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -279,10 +277,10 @@
             </div>
           </div>
         </div>
-      </router-link>
+      </a>
     </div>
     <div>
-      <router-link to="DetailProduk">
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -310,8 +308,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
         >
@@ -339,8 +337,8 @@
             </div>
           </div>
         </div>
-      </router-link>
-      <router-link to="DetailProduk">
+      </a>
+      <a href="">
         <div
           class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
         >
@@ -368,7 +366,16 @@
             </div>
           </div>
         </div>
-      </router-link>
+      </a>
     </div>
   </section>
 </template>
+<script>
+import { RouterLink } from "vue-router";
+
+export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+};
+</script>
