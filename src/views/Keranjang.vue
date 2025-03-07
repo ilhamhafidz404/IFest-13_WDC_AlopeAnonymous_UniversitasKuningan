@@ -3,7 +3,7 @@
     class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
     style="background-image: url('/image/hero.png')"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Keranjang</h1>
       <p>
@@ -168,7 +168,7 @@
                 <span>Rp. 2.000</span>
               </div>
             </div>
-            <div class="border-t mt-6 pt-4 font-bold flex justify-between">
+            <div class="border-t mt-6 pt-4 font-bold flex justify-between mb-5">
               <span>TOTAL</span>
               <span>Rp. 1.039.500</span>
             </div>

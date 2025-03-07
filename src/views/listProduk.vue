@@ -3,7 +3,7 @@
     class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
     style="background-image: url('/image/hero.png')"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">List Produk</h1>
       <p>
@@ -106,6 +106,7 @@
     <div
       class="lg:col-span-3 col-span-4 grid sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-5"
     >
+    
       <div>
         <a href="">
           <div
