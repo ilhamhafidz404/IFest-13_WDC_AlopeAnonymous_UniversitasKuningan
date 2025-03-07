@@ -5,7 +5,7 @@
   >
     <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative z-10">
-      <h1 class="font-sekunder text-4xl my-5">Bathrift</h1>
+      <h1 class="font-sekunder text-4xl my-5">BaThrift</h1>
       <p>
         menghadirkan batik preloved berkualitas, memberi <br />
         kehidupan baru pada kain bernilai seni, sekaligus <br />
