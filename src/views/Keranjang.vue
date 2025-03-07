@@ -1,9 +1,24 @@
 <template>
-  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
-  <div class="font-poppins mt-10 sm:p-6 bg-white min-h-screen">
-    <h1 class="text-xl sm:text-2xl font-bold mb-2">Keranjang Belanja</h1>
-    <p class="text-gray-900 font-semibold mb-6 text-sm sm:text-base">
-      <a href="#">3 batik di keranjangmu</a>
+  <section
+    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
+    style="background-image: url('/image/hero.png')"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="font-sekunder text-4xl my-5">Keranjang</h1>
+      <p>
+        Cek kembali produk pilihan Anda dan jadilah bagian <br />
+        dari perubahan! Dukung keberlanjutan dengan <br />
+        memilih batik ramah lingkungan
+      </p>
+    </div>
+  </section>
+  <div class="container mx-auto mt-10 sm:p-6 min-h-screen">
+    <h1 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">
+      Keranjang Belanja
+    </h1>
+    <p class="text-gray-700 font-semibold mb-6 text-sm sm:text-base">
+      3 batik di keranjangmu
     </p>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -91,13 +106,13 @@
 
       <!-- Kalkulasi Pengiriman -->
       <div class="lg:col-span-1">
-        <div
-          class="bg-white border-2 border-primary rounded-lg shadow p-4 sm:p-6"
-        >
-          <h2 class="font-bold mb-4 text-lg">Kalkulasi Pengiriman</h2>
+        <div class="border-primary border-2 rounded-lg shadow p-4 sm:p-6">
+          <h2 class="font-bold mb-4 text-lg text-gray-900">
+            Kalkulasi Pengiriman
+          </h2>
           <select
             v-model="selectedProvince"
-            class="w-full mb-2 p-2 border rounded-md"
+            class="w-full mb-2 p-2 border rounded-md border-primary text-gray-700"
           >
             <option disabled value="">Pilih Provinsi</option>
             <option v-for="province in provinces" :key="province">
@@ -106,7 +121,7 @@
           </select>
           <select
             v-model="selectedCity"
-            class="w-full mb-2 p-2 border rounded-md"
+            class="w-full mb-2 p-2 border rounded-md border-primary text-gray-700"
           >
             <option disabled value="">Pilih Kabupaten / Kota</option>
             <option v-for="city in cities" :key="city">{{ city }}</option>
@@ -114,9 +129,11 @@
           <input
             type="text"
             placeholder="Kode Pos"
-            class="w-full mb-4 p-2 border rounded-md"
+            class="w-full mb-4 p-2 border rounded-md border-primary"
           />
-          <button class="w-full py-2 bg-primary text-white rounded-md">
+          <button
+            class="w-full py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+          >
             Update
           </button>
 
@@ -128,17 +145,19 @@
               >ReBatik</a
             >
           </p>
-          <select class="w-full p-2 mb-2 border rounded-md">
+          <select class="w-full p-2 mb-2 border-primary border-2 rounded-md">
             <option>ReBatik Discount 10%</option>
           </select>
-          <div class="bg-primary/80 text-white p-4 sm:p-6 rounded-md shadow-lg">
-            <h2 class="font-bold text-lg sm:text-2xl mb-6">Total Belanja</h2>
+          <div class="border-2 border-primary p-4 sm:p-6 rounded-md shadow-lg">
+            <h2 class="font-semibold text-lg sm:text-2xl mb-6">
+              Total Belanja
+            </h2>
             <div class="text-xs sm:text-sm space-y-4">
               <div class="flex justify-between">
                 <span>Subtotal keranjang</span>
                 <span>Rp. 1.125.000</span>
               </div>
-              <div class="flex justify-between">
+              <div class="flex justify-between text-red-600">
                 <span>Voucher Diskon</span>
                 <span>- Rp. 112.500</span>
               </div>
@@ -156,10 +175,10 @@
               <span>Rp. 1.039.500</span>
             </div>
             <router-link
-              to="Checkout"
-              class="w-full mt-10 py-3 px-3 flex justify-center bg-primary text-white rounded-md hover:bg-primary/90 transition"
+              to="/checkout"
+              class="flex justify-center mt-2 py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
             >
-              Check Out
+              Checkout
             </router-link>
           </div>
         </div>

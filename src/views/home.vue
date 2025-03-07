@@ -8,10 +8,10 @@
       />
       <div class="absolute inset-0 bg-black bg-opacity-45"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
           Melestarikan Budaya
         </h1>
-        <h1 class="md:text-6xl text-2xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
           Merawat Bumi
         </h1>
       </div>
@@ -71,7 +71,7 @@
               <h3 class="font-semibold text-gray-900">
                 Bahan Ramah Lingkungan
               </h3>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami menggunakan bahan organik dan pewarna alami, menciptakan
                 batik berkualitas yang ramah lingkungan.
               </p>
@@ -87,7 +87,7 @@
           <div class="flex gap-5 justify-end items-center xl:mb-3 mb-7">
             <div class="xl:w-2/3 w-full md:text-right text-left md:pl-0 pl-4">
               <h5 class="font-semibold text-gray-900">Jual Batik Second</h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami menghadirkan batik second berkualitas, memberi kesempatan
                 kedua pada kain, dan mengurangi limbah tekstil.
               </p>
@@ -125,7 +125,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemanfaatan Sisa Bahan
               </h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami memanfaatkan sisa bahan untuk aksesori, patchwork, dan
                 produk kreatif, mengurangi limbah dan mendukung keberlanjutan.
               </p>
@@ -143,7 +143,7 @@
               <h5 class="font-semibold text-gray-900">
                 Pemberdayaan Pengrajin Batik
               </h5>
-              <p class="text-sm text-gray-700">
+              <p class="text-sm text-gray-700 text-">
                 Kami memberdayakan pengrajin lokal dengan mendukung
                 kesejahteraan serta melestarikan warisan budaya.
               </p>
@@ -167,7 +167,7 @@
         </p>
       </div>
       <div class="lg:col-span-2">
-        <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:gap-5 gap-2">
+        <div class="grid xl:grid-cols-3 sm:grid-cols-2 md:gap-5 gap-2">
           <div class="relative rounded overflow-hidden group cursor-pointer">
             <img
               src="/image/page/1.png"
@@ -189,7 +189,7 @@
             </div>
           </div>
           <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer xl:block hidden group"
+            class="hoverCard relative rounded overflow-hidden cursor-pointer group"
           >
             <img
               src="/image/page/1.png"
@@ -211,7 +211,7 @@
             </div>
           </div>
           <div
-            class="hoverCard relative rounded overflow-hidden cursor-pointer lg:block hidden group"
+            class="hoverCard relative rounded overflow-hidden cursor-pointer group"
           >
             <img
               src="/image/page/1.png"
@@ -406,10 +406,11 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Belanja di Sundara Batik adalah keputusan terbaik! Kualitas produk
+            luar biasa, motif batiknya indah, dan saya senang bisa berkontribusi
+            pada lingkungan dengan mendukung brand yang peduli keberlanjutan."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
+          <h6 class="sm:text-xl font-semibold mt-5">Taufan</h6>
           <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
           <img
             src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
@@ -421,13 +422,15 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Saya sangat terkesan dengan koleksi Sundara Batik! Setiap produk
+            mereka dibuat dari bahan bekas yang didaur ulang membuat saya
+            semakin bangga memakainya. Fashion berkelanjutan yang tetap
+            stylish!."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Firdan Fauzan</h6>
+          <span class="text-xs -mt-[2px] block">Pecinta Produk Lokal</span>
           <img
-            src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
@@ -436,13 +439,14 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Sundara Batik membuktikan bahwa fashion ramah lingkungan bisa tetap
+            trendi dan elegan. Saya suka bagaimana mereka menghidupkan kembali
+            bahan-bahan lama menjadi karya seni yang bisa dipakai sehari-hari."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Dzikri</h6>
+          <span class="text-xs -mt-[2px] block">Penggemar Batik Modern</span>
           <img
-            src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />

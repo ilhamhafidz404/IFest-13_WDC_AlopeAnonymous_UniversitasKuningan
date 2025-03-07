@@ -1,122 +1,99 @@
 <template>
-  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
-  <div class="h-screen w-full flex flex-col">
-    <div class="room flex-1 overflow-auto p-4 bg-gray-100 space-y-4">
-      <div class="chat space-y-4">
-        <!-- Sender Messages -->
-        <div
-          class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
-        >
-          <div class="message p-4 rounded-lg border bg-[#B89158] text-white">
-            <p>Hallo!</p>
+  <section
+    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center min-h-[50vh]"
+    style="
+      background-image: url('/image/hero.png');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="font-sekunder text-4xl my-5">Chat Bot</h1>
+      <p>
+        Selamat datang! Ingin tahu lebih banyak tentang <br />
+        batik ramah lingkungan dan cara mendukung keberlanjutan? <br />
+        Tanyakan apa saja!
+      </p>
+    </div>
+  </section>
+
+  <div class="flex flex-col h-screen w-full p-4 md:p-10">
+    <div
+      class="flex-1 overflow-auto p-4 border border-primary rounded-lg space-y-4 bg-gray-100"
+    >
+      <div
+        v-for="(message, index) in messages"
+        :key="index"
+        class="flex items-end space-x-3"
+        :class="{ 'justify-end': message.sender === 'user' }"
+      >
+        <div v-if="message.sender === 'user'" class="flex items-end space-x-3">
+          <div
+            class="p-4 rounded-lg bg-[#B89158] text-white max-w-xs md:max-w-md"
+          >
+            <p>{{ message.text }}</p>
           </div>
           <div
-            class="icon-user w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border bg-[#D9D9D9]"
+            class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
           >
             <img
-              class="w-10 h-10"
+              class="w-10 h-10 object-cover"
               src="/image/icon/person-icon.png"
               alt="User Icon"
             />
           </div>
         </div>
-
-        <!-- Receiver Messages -->
-        <div class="receiver flex w-[90%] md:w-1/2 space-x-3 items-end">
+        <div v-else class="flex items-end space-x-3">
           <div
-            class="icon-user w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border bg-[#D9D9D9]"
+            class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
           >
             <img
-              class="w-10 h-10"
+              class="w-10 h-10 object-cover"
               src="/image/logo/logo 4.png"
               alt="Sundara Logo"
             />
           </div>
-          <div class="space-y-2">
-            <div class="message p-4 rounded-lg border bg-primary text-white">
-              <p>Hallo Juga!</p>
-            </div>
-            <div class="message p-4 rounded-lg border bg-primary text-white">
-              <p>Ada yang bisa dibantu?</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sender Messages -->
-        <!-- <div
-          class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
-        >
-          <div class="message p-4 rounded-xl border bg-[#B89158] text-white">
-            <p>Bagaimana cara menukar batik?</p>
-          </div>
           <div
-            class="icon-user w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border bg-[#D9D9D9]"
+            class="p-4 rounded-lg bg-primary text-white max-w-xs md:max-w-md"
           >
-            <img
-              class="w-10 h-10"
-              src="/image/icon/person-icon.png"
-              alt="User Icon"
-            />
-          </div>
-        </div> -->
-
-        <!-- Typing Indicator -->
-        <div
-          v-if="isLoading"
-          class="receiver flex w-[90%] md:w-1/2 space-x-3 items-end"
-        >
-          <div
-            class="icon-user w-12 h-12 flex justify-center items-center rounded-full overflow-hidden border bg-[#D9D9D9]"
-          >
-            <img
-              class="w-10 h-10"
-              src="/image/logo/logo 4.png"
-              alt="Sundara Logo"
-            />
-          </div>
-          <div class="typing p-3 rounded-full border bg-primary flex space-x-1">
-            <span
-              class="dot w-2 h-2 bg-white rounded-full animate-bounce"
-            ></span>
-            <span
-              class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-150"
-            ></span>
-            <span
-              class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-300"
-            ></span>
+            <p>{{ message.text }}</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Input Form -->
-    <div class="type w-full border-t border-primary px-3 py-2 bg-white">
-      <div class="form w-full flex items-center space-x-2">
-        <button class="paper-clip flex-none p-2">
+      <div v-if="isLoading" class="flex items-center space-x-3">
+        <div
+          class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
+        >
           <img
-            class="w-6"
-            src="/image/icon/paper-clip-icon.png"
-            alt="Paper Clip"
+            class="w-10 h-10 object-cover"
+            src="/image/logo/logo 4.png"
+            alt="Sundara Logo"
           />
-        </button>
+        </div>
+        <div class="p-3 rounded-full border bg-primary flex space-x-1">
+          <span class="dot w-2 h-2 bg-white rounded-full animate-bounce"></span>
+          <span
+            class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-150"
+          ></span>
+          <span
+            class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-300"
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="py-2 px-4 border-t border-primary">
+      <div class="flex items-center space-x-2">
         <input
-          class="flex-1 h-[40px] px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
-          type="text"
-          placeholder="Tulis Pesan ..."
+          v-model="userInput"
+          @keyup.enter="sendMessage"
+          class="flex-1 h-10 px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          placeholder="Tulis pesan..."
         />
-        <button class="emoticon flex-none p-2">
-          <img class="w-6" src="/image/icon/emoticon-icon.png" alt="Emoticon" />
-        </button>
-        <button class="send flex-none p-2">
+        <button class="p-2" @click="sendMessage">
           <img class="w-6" src="/image/icon/send-icon.png" alt="Send" />
         </button>
       </div>
-    </div>
-  </div>
-
-  <div>
-    <div>
-      <p v-if="isLoading">Loading...</p>
     </div>
   </div>
 </template>

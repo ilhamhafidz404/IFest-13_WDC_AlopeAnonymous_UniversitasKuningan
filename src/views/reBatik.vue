@@ -24,7 +24,7 @@ import { RouterLink } from "vue-router";
         alt=""
         class="h-auto md:h-4/5 w-1/2 md:w-auto"
       />
-      <div>
+      <div class="pb-12">
         <h2
           class="lg:text-3xl text-2xl text-primary font-semibold italic mb-6 mt-14 text-center md:text-left"
         >
