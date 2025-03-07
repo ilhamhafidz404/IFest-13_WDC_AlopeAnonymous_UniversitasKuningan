@@ -1,5 +1,6 @@
 <template>
-  <div class="font-poppins mt-20 sm:p-6 bg-white min-h-screen">
+  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
+  <div class="font-poppins mt-10 sm:p-6 bg-white min-h-screen">
     <h1 class="text-xl sm:text-2xl font-bold mb-2">Keranjang Belanja</h1>
     <p class="text-gray-900 font-semibold mb-6 text-sm sm:text-base">
       <a href="#">3 batik di keranjangmu</a>
@@ -90,7 +91,9 @@
 
       <!-- Kalkulasi Pengiriman -->
       <div class="lg:col-span-1">
-        <div class="bg-gray-100 rounded-lg shadow p-4 sm:p-6">
+        <div
+          class="bg-white border-2 border-primary rounded-lg shadow p-4 sm:p-6"
+        >
           <h2 class="font-bold mb-4 text-lg">Kalkulasi Pengiriman</h2>
           <select
             v-model="selectedProvince"

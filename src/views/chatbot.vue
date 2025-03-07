@@ -1,14 +1,13 @@
 <template>
-  <div class="mt-20 h-screen w-full flex flex-col">
+  <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
+  <div class="h-screen w-full flex flex-col">
     <div class="room flex-1 overflow-auto p-4 bg-gray-100 space-y-4">
       <div class="chat space-y-4">
         <!-- Sender Messages -->
         <div
           class="sender flex w-[90%] md:w-1/2 ml-auto items-end space-x-3 justify-end"
         >
-          <div
-            class="message p-4 rounded-l-full rounded-tr-full border bg-[#B89158] text-white"
-          >
+          <div class="message p-4 rounded-lg border bg-[#B89158] text-white">
             <p>Hallo!</p>
           </div>
           <div
@@ -34,14 +33,10 @@
             />
           </div>
           <div class="space-y-2">
-            <div
-              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
-            >
+            <div class="message p-4 rounded-lg border bg-primary text-white">
               <p>Hallo Juga!</p>
             </div>
-            <div
-              class="message p-4 rounded-r-full rounded-tl-full border bg-primary text-white"
-            >
+            <div class="message p-4 rounded-lg border bg-primary text-white">
               <p>Ada yang bisa dibantu?</p>
             </div>
           </div>

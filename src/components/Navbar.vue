@@ -36,19 +36,24 @@
 
       <!-- Tombol ikon di layar besar -->
       <div class="hidden md:flex space-x-4">
-        <button :class="{ 'text-white': !scrolled, 'text-primary': scrolled }">
+        <router-link
+          to="/keranjang"
+          :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
+        >
           <i class="fas fa-shopping-cart text-xl"></i>
-        </button>
-        <RouterLink
+        </router-link>
+        <router-link
+          to="/profile"
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-user text-xl"></i>
-        </RouterLink>
-        <RouterLink
+        </router-link>
+        <router-link
+          to="/logout"
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </RouterLink>
+        </router-link>
       </div>
 
       <!-- Hamburger Button -->
@@ -101,15 +106,15 @@
       </ul>
 
       <div class="flex justify-center space-x-6 mt-4">
-        <router-link to="Keranjang" class="text-primary">
+        <router-link to="/keranjang" class="text-primary">
           <i class="fas fa-shopping-cart text-xl"></i>
         </router-link>
-        <button class="text-primary">
+        <router-link to="/profile" class="text-primary">
           <i class="fas fa-user text-xl"></i>
-        </button>
-        <button class="text-primary">
+        </router-link>
+        <router-link to="/logout" class="text-primary">
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </button>
+        </router-link>
       </div>
     </div>
   </nav>
@@ -144,7 +149,6 @@ export default {
 </script>
 
 <style scoped>
-/* Efek garis bawah dari kiri ke kanan */
 .nav-link {
   position: relative;
   display: inline-block;
