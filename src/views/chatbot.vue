@@ -20,7 +20,7 @@
 
   <div class="flex flex-col h-screen w-full p-4 md:p-10">
     <div
-      class="flex-1 overflow-auto p-4 border border-primary rounded-lg space-y-4 bg-gray-100"
+      class="flex-1 overflow-auto p-4 border-2 border-primary rounded-lg space-y-4"
     >
       <div
         v-for="(message, index) in messages"
@@ -57,7 +57,7 @@
           <div
             class="p-4 rounded-lg bg-primary text-white max-w-xs md:max-w-md"
           >
-            <p>{{ message.text }}</p>
+            <p class="text-justify">{{ message.text }}</p>
           </div>
         </div>
       </div>
@@ -82,12 +82,12 @@
         </div>
       </div>
     </div>
-    <div class="py-2 px-4 border-t border-primary">
+    <div class="py-2 px-4">
       <div class="flex items-center space-x-2">
         <input
           v-model="userInput"
           @keyup.enter="sendMessage"
-          class="flex-1 h-10 px-3 border rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          class="flex-1 h-10 px-3 border-2 border-primary rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
           placeholder="Tulis pesan..."
         />
         <button class="p-2" @click="sendMessage">
@@ -97,11 +97,14 @@
     </div>
   </div>
 </template>
-
 <script>
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
 export default {
+  name: "Chatbot",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   data() {
     return {
       userInput: "",

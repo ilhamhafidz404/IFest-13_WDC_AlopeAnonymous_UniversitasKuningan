@@ -13,7 +13,7 @@
       </p>
     </div>
   </section>
-  <div class="container mx-auto mt-10 sm:p-6 min-h-screen">
+  <div class="container xl:px-20 md:px-10 px-5 pt-10 pb-10">
     <h1 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">
       Keranjang Belanja
     </h1>
