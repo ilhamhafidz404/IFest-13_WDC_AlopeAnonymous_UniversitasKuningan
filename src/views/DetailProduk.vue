@@ -100,7 +100,7 @@
           <div class="flex items-center -mx-2 mb-4">
             <div class="px-2">
               <button
-                class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-md font-bold hover:bg-gray-300"
+                class="w-full bg-gray-200 text-gray-800 py-2 px-4 rounded-md font-semibold hover:bg-gray-300"
               >
                 Masukan Keranjang
               </button>
@@ -108,7 +108,7 @@
             <div class="w-1/2 px-2">
               <router-link
                 to="Checkout"
-                class="w-full bg-primary text-white py-2 px-4 rounded-md font-bold hover:bg-primary/90"
+                class="w-full bg-primary text-white py-2 px-4 rounded-md font-semibold hover:bg-primary/90"
               >
                 CheckOut Sekarang
               </router-link>
@@ -123,20 +123,31 @@
       <div class="border border-primary rounded-lg p-6">
         <h3 class="text-xl font-bold mb-4">Deskripsi Produk</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          nemo nobis deleniti fugiat dolorem, eaque dicta placeat ex officiis
-          omnis. Veritatis, sunt! Possimus totam expedita quod suscipit? Quae,
-          commodi nulla. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Tempore esse unde maiores quae pariatur repellat beatae
-          accusantium possimus voluptas maxime assumenda doloribus, natus labore
-          corrupti error itaque neque sunt ab. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quia ex nisi, delectus ipsa, eum eaque
-          illo possimus totam corporis dolorem consequatur ad eligendi numquam
-          dolorum quos, dignissimos voluptatibus adipisci accusantium. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Cum dolorum porro
-          voluptatem fugit placeat quibusdam, rem nobis alias beatae
-          repudiandae, reiciendis sint et cupiditate molestiae modi, minima
-          necessitatibus sapiente sed?
+          Deskripsi Produk: <br />
+          Nikmati keanggunan budaya Indonesia dengan Batik motif Kawung, simbol
+          kemurnian dan kebijaksanaan yang melegenda. Motif geometris yang
+          menyerupai buah kolang-kaling ini menciptakan kesan mewah namun tetap
+          sederhana, cocok untuk berbagai acara formal maupun kasual. <br />
+          Detail Produk: <br />
+          Bahan: Katun Premium / Rayon hasil daur ulang <br />
+          Teknik: Tulis / Cap / Kombinasi <br />
+          Warna: Beragam pilihan warna klasik & modern br Ukuran: Panjang 2m x
+          Lebar 1,15m (kain) atau sesuai ukuran pakaian <br />
+          Perawatan: Cuci tangan dengan deterjen lembut, hindari sinar matahari
+          langsung untuk menjaga warna awet <br />
+          Keunggulan: <br />
+          - Nyaman dipakai sehari-hari <br />
+          - Motif autentik penuh makna <br />
+          - Jahitan rapi & finishing berkualitas tinggi <br />
+          - Berkontribusi pada pengurangan limbah tekstil<br />
+          Batik Kawung ini bukan sekadar kain, melainkan simbol pelestarian
+          budaya dan kepedulian lingkungan. Cocok untuk hadiah spesial, koleksi
+          pribadi, hingga fashion statement yang berkelas dan bermakna.
+          <br />
+          <br />
+          Kami siap mengirimkan ke seluruh Indonesia dengan pengemasan rapi dan
+          ramah lingkungan. Yuk, tampil memukau sambil menjaga bumi dengan Batik
+          Kawung berkelanjutan ini!
         </p>
       </div>
     </div>
@@ -145,18 +156,76 @@
   <section class="py-5 px-5 mb-20">
     <div class="max-w-7xl mx-auto">
       <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-6">
-        <a href="">
+        <RouterLink to="detailProduk">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
+              src="/image/produk/kemeja 3.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
               <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+                <h3 class="text-lg font-semibold">Batik Motif Bunga</h3>
+                <p class="text-gray-600 text-sm">M-XL</p>
+              </div>
+              <p class="text-gray-800 font-bold">Rp. 100.000</p>
+              <div class="flex items-center mt-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-600 ml-1">9.5 (1)</span>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <span
+                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
+                  >BaThrift</span
+                >
+                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
+              </div>
+            </div>
+          </div>
+        </RouterLink>
+        <RouterLink to="detailProduk">
+          <div
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-b"
+              src="/image/produk/kemeja 4.jpg"
+              alt="Batik Motif Kawung"
+            />
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Batik Motif Angsa</h3>
+                <p class="text-gray-600 text-sm">XL</p>
+              </div>
+              <p class="text-gray-800 font-bold">Rp. 125.000</p>
+              <div class="flex items-center mt-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-600 ml-1">-</span>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <span
+                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
+                  >BaThrift</span
+                >
+                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
+              </div>
+            </div>
+          </div>
+        </RouterLink>
+        <RouterLink to="detailProduk">
+          <div
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+          >
+            <img
+              class="w-full h-64 object-cover rounded-b"
+              src="/image/produk/kemeja 2.jpg"
+              alt="Batik Motif Kawung"
+            />
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-semibold">Batik Motif Garuda</h3>
                 <p class="text-gray-600 text-sm">S-3XL</p>
               </div>
               <p class="text-gray-800 font-bold">Rp. 350.000</p>
@@ -173,96 +242,38 @@
               </div>
             </div>
           </div>
-        </a>
-        <a href="">
+        </RouterLink>
+        <RouterLink to="detailProduk">
           <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
           >
             <img
               class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Parang"
+              src="/image/produk/rebatik 1.png"
+              alt="Batik Motif Kawung"
             />
             <div class="p-4">
               <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Parang</h3>
-                <p class="text-gray-600 text-sm">M-XXL</p>
+                <h3 class="text-lg font-semibold">Tas Kain</h3>
+                <p class="text-gray-600 text-sm">-</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 280.000</p>
+              <p class="text-gray-800 font-bold">Rp. 25.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">8.8 (75)</span>
+                <span class="text-gray-600 ml-1">9.5 (100)</span>
               </div>
               <div class="flex items-center justify-between mt-2">
                 <span
                   class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
-                  >Second</span
+                  >ReBatik</span
                 >
                 <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
               </div>
             </div>
           </div>
-        </a>
-        <a href="">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-          >
-            <img
-              class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Mega Mendung"
-            />
-            <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Mega Mendung</h3>
-                <p class="text-gray-600 text-sm">L-XL</p>
-              </div>
-              <p class="text-gray-800 font-bold">Rp. 400.000</p>
-              <div class="flex items-center mt-2">
-                <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">9.8 (120)</span>
-              </div>
-              <div class="flex items-center justify-between mt-2">
-                <span
-                  class="inline-block px-3 py-1 bg-primary/30 text-primary text-xs font-semibold rounded-full"
-                  >Baru</span
-                >
-                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
-          >
-            <img
-              class="w-full h-64 object-cover rounded-b"
-              src="/image/produk/kemeja 1.png"
-              alt="Batik Limited Edition"
-            />
-            <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Limited Edition</h3>
-                <p class="text-gray-600 text-sm">S-L</p>
-              </div>
-              <p class="text-gray-800 font-bold">Rp. 500.000</p>
-              <div class="flex items-center mt-2">
-                <span class="text-yellow-500">★</span>
-                <span class="text-gray-600 ml-1">9.9 (50)</span>
-              </div>
-              <div class="flex items-center justify-between mt-2">
-                <span
-                  class="inline-block px-3 py-1 bg-red-500 text-white text-xs font-semibold rounded-full"
-                  >Limited</span
-                >
-                <img src="/image/logo/logo 2.png" alt="Logo" class="w-20 h-8" />
-              </div>
-            </div>
-          </div>
-        </a>
+        </RouterLink>
       </div>
-      <div class="flex justify-center mt-6">
+      <div class="flex justify-center mt-2">
         <RouterLink
           to="listProduk"
           class="inline-flex items-center px-6 py-3 border bg-primary text-white hover:bg-primary/90 rounded-lg transition"
