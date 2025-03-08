@@ -2,7 +2,7 @@
   <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
   <div class="flex flex-col md:flex-row min-h-screen">
     <!-- Sidebar -->
-    <div class="w-full md:w-1/4 bg-white border-r shadow-2xl">
+    <div class="w-full md:w-[300px] bg-white border-r shadow-2xl">
       <div class="p-6">
         <h2 class="text-3xl font-bold mt-5 mb-12">Profile</h2>
         <ul>
@@ -138,7 +138,7 @@
                     <img
                       src="/image/page/wanita1.png"
                       alt="Batik Pekalongan"
-                      class="absolute -bottom-2 -right-2 w-10 h-10 rounded-lg shadow"
+                      class="absolute -bottom-4 -right-3 w-16 h-16 rounded-lg shadow"
                     />
                   </div>
                   <div>
@@ -224,7 +224,7 @@
                   </div>
                 </li>
                 <li class="mb-4 flex items-start">
-                  <i class="fa-solid fa-box-open text-primary mr-4 mt-1"></i>
+                  <i class="fa-solid fa-box-open text-primary mr-3 mt-1"></i>
                   <div>
                     <span class="font-bold">02-02-2025 00:24</span> - Pesanan
                     Dibuat
@@ -234,11 +234,13 @@
             </div>
           </div>
           <div class="mt-6 gap-4 flex justify-end">
-            <button
+            <a
+              href="#"
               class="bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-500"
+              @click="activeTab = 'pengembalian'"
             >
               Ajukan Pengembalian
-            </button>
+            </a>
             <button
               class="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90"
             >
@@ -270,7 +272,7 @@
             Lainnya
             <input
               placeholder="Jelaskan alasan..."
-              class="border p-2 mt-2 w-full focus:outline-none focus:border-primary"
+              class="border p-2 mt-2 w-full rounded-md focus:outline-none focus:border-primary"
             />
           </label>
         </div>
@@ -404,7 +406,7 @@
           </div>
           <button
             type="button"
-            class="bg-primary text-white font-bold py-3 px-6 rounded-lg mt-2"
+            class="bg-primary text-white py-3 px-6 rounded-lg mt-2"
           >
             Ajukan Pengembalian
           </button>
@@ -427,6 +429,10 @@ export default {
     SetShowDetail() {
       this.showDetail = !this.showDetail;
     },
+  },
+  name: "profile",
+  mounted() {
+    window.scrollTo(0, 0);
   },
 };
 </script>

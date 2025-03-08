@@ -229,7 +229,7 @@
             <div
               class="absolute bottom-5 left-0 bg-primary/80 text-white text-xs px-5 py-2 rounded-r opacity-100 group-hover:opacity-0 transition-opacity duration-300"
             >
-              <h3 class="text-lg">Jual Second</h3>
+              <h3 class="text-lg">BaThrif</h3>
             </div>
           </div>
         </div>
@@ -410,10 +410,11 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Belanja di Sundara Batik adalah keputusan terbaik! Kualitas produk
+            luar biasa, motif batiknya indah, dan saya senang bisa berkontribusi
+            pada lingkungan dengan mendukung brand yang peduli keberlanjutan."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
+          <h6 class="sm:text-xl font-semibold mt-5">Taufan</h6>
           <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
           <img
             src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
@@ -425,13 +426,15 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Saya sangat terkesan dengan koleksi Sundara Batik! Setiap produk
+            mereka dibuat dari bahan bekas yang didaur ulang membuat saya
+            semakin bangga memakainya. Fashion berkelanjutan yang tetap
+            stylish!."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Firdan Fauzan</h6>
+          <span class="text-xs -mt-[2px] block">Pecinta Produk Lokal</span>
           <img
-            src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
@@ -440,13 +443,14 @@
           class="bg-gray-100 text-left sm:p-7 p-5 border border-primary rounded relative shadow"
         >
           <p class="sm:text-sm text-xs">
-            "Luar biasa! Produk ini sangat membantu saya menjaga kelestarian
-            lingkungan."
+            "Sundara Batik membuktikan bahwa fashion ramah lingkungan bisa tetap
+            trendi dan elegan. Saya suka bagaimana mereka menghidupkan kembali
+            bahan-bahan lama menjadi karya seni yang bisa dipakai sehari-hari."
           </p>
-          <h6 class="sm:text-xl font-semibold mt-5">Ilham Hafidz</h6>
-          <span class="text-xs -mt-[2px] block">Pecinta Fashion</span>
+          <h6 class="sm:text-xl font-semibold mt-5">Dzikri</h6>
+          <span class="text-xs -mt-[2px] block">Penggemar Batik Modern</span>
           <img
-            src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             class="w-[70px] h-[70px] rounded-full object-cover border border-primary absolute sm:right-5 right-3 bottom-0 translate-y-1/3 borde"
           />
