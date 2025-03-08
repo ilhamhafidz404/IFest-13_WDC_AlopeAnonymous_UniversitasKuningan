@@ -6,12 +6,12 @@
         alt="Background Image"
         class="absolute inset-0 w-full h-full object-cover"
       />
-      <div class="absolute inset-0 bg-black bg-opacity-45"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-medium">
           Melestarikan Budaya
         </h1>
-        <h1 class="md:text-6xl text-3xl text-sekunder font-semibold">
+        <h1 class="md:text-6xl text-3xl text-sekunder font-medium">
           Merawat Bumi
         </h1>
       </div>

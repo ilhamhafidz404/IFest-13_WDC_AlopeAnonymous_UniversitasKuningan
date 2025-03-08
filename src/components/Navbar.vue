@@ -23,7 +23,7 @@
       >
         <li><router-link to="/" class="nav-link">Home</router-link></li>
         <li>
-          <router-link to="ListProduk" class="nav-link">Product</router-link>
+          <router-link to="listProduk" class="nav-link">Produk</router-link>
         </li>
         <li>
           <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
@@ -31,29 +31,30 @@
         <li>
           <router-link to="reBatik" class="nav-link">ReBatik</router-link>
         </li>
-        <li><router-link to="" class="nav-link">Jual</router-link></li>
+        <li>
+          <router-link to="baThrift" class="nav-link">BaThrift</router-link>
+        </li>
       </ul>
 
       <!-- Tombol ikon di layar besar -->
       <div class="hidden md:flex space-x-4">
-        <router-link
-          to="/keranjang"
+        <RouterLink
+          to="keranjang"
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-shopping-cart text-xl"></i>
-        </router-link>
-        <router-link
-          to="/profile"
+        </RouterLink>
+        <RouterLink
+          to="profile"
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-user text-xl"></i>
-        </router-link>
-        <router-link
-          to="/logout"
+        </RouterLink>
+        <RouterLink
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </router-link>
+        </RouterLink>
       </div>
 
       <!-- Hamburger Button -->
@@ -85,7 +86,7 @@
             to="ListProduk"
             class="nav-link"
             @click="isMenuOpen = false"
-            >Product</router-link
+            >Produk</router-link
           >
         </li>
         <li>
@@ -99,8 +100,11 @@
           >
         </li>
         <li>
-          <router-link to="" class="nav-link" @click="isMenuOpen = false"
-            >Jual</router-link
+          <router-link
+            to="baThrift"
+            class="nav-link"
+            @click="isMenuOpen = false"
+            >BaThrift</router-link
           >
         </li>
       </ul>
@@ -109,12 +113,12 @@
         <router-link to="/keranjang" class="text-primary">
           <i class="fas fa-shopping-cart text-xl"></i>
         </router-link>
-        <router-link to="/profile" class="text-primary">
+        <router-link to="profile" class="text-primary">
           <i class="fas fa-user text-xl"></i>
         </router-link>
-        <router-link to="/logout" class="text-primary">
+        <button class="text-primary">
           <i class="fas fa-sign-out-alt text-xl"></i>
-        </router-link>
+        </button>
       </div>
     </div>
   </nav>
@@ -149,6 +153,7 @@ export default {
 </script>
 
 <style scoped>
+/* Efek garis bawah dari kiri ke kanan */
 .nav-link {
   position: relative;
   display: inline-block;

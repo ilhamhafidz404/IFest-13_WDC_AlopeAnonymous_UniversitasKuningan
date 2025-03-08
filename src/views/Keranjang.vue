@@ -3,7 +3,7 @@
     class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
     style="background-image: url('/image/hero.png')"
   >
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Keranjang</h1>
       <p>
@@ -132,7 +132,7 @@
             class="w-full mb-4 p-2 border rounded-md border-primary"
           />
           <button
-            class="w-full py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+            class="w-full py-2 px-6 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
           >
             Update
           </button>
@@ -174,11 +174,12 @@
               <span>TOTAL</span>
               <span>Rp. 1.039.500</span>
             </div>
+
             <router-link
-              to="/checkout"
-              class="flex justify-center mt-2 py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+              to="Checkout"
+              class="w-full mt-10 py-3 px-3 flex justify-center bg-primary text-white rounded-md hover:bg-primary/90 transition"
             >
-              Checkout
+              Check Out
             </router-link>
           </div>
         </div>

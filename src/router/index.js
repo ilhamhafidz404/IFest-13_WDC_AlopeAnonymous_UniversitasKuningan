@@ -6,11 +6,13 @@ import Login from "../views/login.vue";
 import Register from "../views/register.vue";
 import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
-import Keranjang from "../views/Keranjang.vue";
+import Keranjang from "../views/keranjang.vue";
 import Checkout from "../views/Checkout.vue";
-import reBatik from "../views/reBatik.vue";
-import DetailProduk from "../views/DetailProduk.vue";
-import Profile from "../views/Profile.vue";
+import DetailProduk from "../views/detailProduk.vue";
+import Profile from "../views/profile.vue";
+import ReBatik from "../views/reBatik.vue";
+import BaTrift from "../views/baThrift.vue";
+import BaThrift from "../views/baThrift.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -28,7 +30,7 @@ const router = createRouter({
     {
       path: "/reBatik",
       name: "reBatik",
-      component: reBatik,
+      component: ReBatik,
     },
     {
       path: "/login",
@@ -56,7 +58,7 @@ const router = createRouter({
       component: Checkout,
     },
     {
-      path: "/detailproduk",
+      path: "/detailProduk",
       name: "detailproduk",
       component: DetailProduk,
     },
@@ -64,6 +66,11 @@ const router = createRouter({
       path: "/profile",
       name: "profile",
       component: Profile,
+    },
+    {
+      path: "/baThrift",
+      name: "baTrift",
+      component: BaThrift,
     },
   ],
 });

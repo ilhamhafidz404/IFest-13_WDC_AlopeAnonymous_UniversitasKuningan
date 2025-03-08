@@ -2,7 +2,7 @@
   <div class="bg-primary h-20 w-full bg-opacity-75 backdrop-blur-lg"></div>
   <div class="flex flex-col md:flex-row min-h-screen">
     <!-- Sidebar -->
-    <div class="w-full md:w-1/4 bg-white border-r shadow-2xl">
+    <div class="w-full md:w-[300px] bg-white border-r shadow-2xl">
       <div class="p-6">
         <h2 class="text-3xl font-bold mt-5 mb-12">Profile</h2>
         <ul>
@@ -138,7 +138,7 @@
                     <img
                       src="/image/page/wanita1.png"
                       alt="Batik Pekalongan"
-                      class="absolute -bottom-2 -right-2 w-10 h-10 rounded-lg shadow"
+                      class="absolute -bottom-4 -right-3 w-16 h-16 rounded-lg shadow"
                     />
                   </div>
                   <div>
