@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-primary text-sekunder lg:py-8">
+  <footer class="bg-primary text-sekunder lg:py-8 py-10">
     <div class="container mx-auto px-6">
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 lg:px-14 text-center md:text-left"

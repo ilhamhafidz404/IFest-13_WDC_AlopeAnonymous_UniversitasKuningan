@@ -165,37 +165,40 @@
         </div>
 
         <!-- Bagian Rincian Pembayaran -->
-        <div>
-          <h3 class="text-xl font-semibold mb-4">Rincian Pembayaran</h3>
-          <div class="space-y-3">
-            <div class="flex justify-between gap-4">
-              <span>Subtotal keranjang</span>
-              <span>Rp. 215.000</span>
-            </div>
-            <div class="flex justify-between text-red-500">
-              <span>Voucher Diskon</span>
-              <span>- Rp. 112.500</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Subtotal Pengiriman</span>
-              <span>Rp. 21.500</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Biaya Layanan</span>
-              <span>Rp. 2.000</span>
-            </div>
-            <div class="border-t pt-20 flex justify-between font-bold">
-              <span>TOTAL</span>
-              <span class="text-primary">Rp. 217.000</span>
-            </div>
-          </div>
+        <div class="border-2 border-primary rounded">
+          <div class="px-5 py-5">
 
-          <div class="mt-4 flex justify-end">
-            <button
-              class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-opacity-90"
-            >
-              Buat Pesanan
-            </button>
+            <h3 class="text-xl font-semibold mb-4">Rincian Pembayaran</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between gap-4">
+                <span>Subtotal keranjang</span>
+                <span>Rp. 215.000</span>
+              </div>
+              <div class="flex justify-between text-red-500">
+                <span>Voucher Diskon</span>
+                <span>- Rp. 112.500</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Subtotal Pengiriman</span>
+                <span>Rp. 21.500</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Biaya Layanan</span>
+                <span>Rp. 2.000</span>
+              </div>
+              <div class="border-t pt-20 flex justify-between font-bold">
+                <span>TOTAL</span>
+                <span class="text-primary">Rp. 217.000</span>
+              </div>
+            </div>
+  
+            <div class="mt-4 flex justify-end">
+              <button
+                class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-opacity-90"
+              >
+                Buat Pesanan
+              </button>
+            </div>
           </div>
         </div>
       </div>
