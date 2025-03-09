@@ -7,8 +7,8 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">BaThrift</h1>
       <p>
-        menghadirkan batik preloved berkualitas, memberi <br />
-        kehidupan baru pada kain bernilai seni, sekaligus <br />
+        menghadirkan batik preloved berkualitas, memberi <br class="hidden md:inline"/>
+        kehidupan baru pada kain bernilai seni, sekaligus <br class="hidden md:inline"/>
         mendukung fashion berkelanjutan.
       </p>
     </div>
