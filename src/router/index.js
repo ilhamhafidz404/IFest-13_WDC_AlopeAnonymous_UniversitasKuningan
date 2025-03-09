@@ -7,11 +7,10 @@ import Register from "../views/register.vue";
 import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
 import Keranjang from "../views/keranjang.vue";
-import Checkout from "../views/Checkout.vue";
-import DetailProduk from "../views/DetailProduk.vue";
+import Checkout from "../views/checkout.vue";
+import DetailProduk from "../views/detailProduk.vue";
 import Profile from "../views/profile.vue";
 import ReBatik from "../views/reBatik.vue";
-import BaTrift from "../views/baThrift.vue";
 import BaThrift from "../views/baThrift.vue";
 
 const router = createRouter({
