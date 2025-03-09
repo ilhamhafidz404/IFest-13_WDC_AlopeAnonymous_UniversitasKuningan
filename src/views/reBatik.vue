@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { RouterLink } from "vue-router";
-</script>
-
 <template>
   <section
     class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center"
@@ -175,3 +171,12 @@ import { RouterLink } from "vue-router";
     </div>
   </section>
 </template>
+<script>
+import { RouterLink } from "vue-router";
+export default {
+  name: "ReBatik",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+};
+</script>

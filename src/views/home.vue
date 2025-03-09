@@ -229,7 +229,7 @@
             <div
               class="absolute bottom-5 left-0 bg-primary/80 text-white text-xs px-5 py-2 rounded-r opacity-100 group-hover:opacity-0 transition-opacity duration-300"
             >
-              <h3 class="text-lg">Jual Second</h3>
+              <h3 class="text-lg">BaThrif</h3>
             </div>
           </div>
         </div>

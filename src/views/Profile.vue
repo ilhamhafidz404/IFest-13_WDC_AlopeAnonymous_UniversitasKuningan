@@ -430,5 +430,9 @@ export default {
       this.showDetail = !this.showDetail;
     },
   },
+  name: "profile",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
