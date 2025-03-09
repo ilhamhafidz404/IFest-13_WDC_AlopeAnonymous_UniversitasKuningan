@@ -11,74 +11,46 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Chat Bot</h1>
       <p>
-        Selamat datang! Ingin tahu lebih banyak tentang <br />
-        batik ramah lingkungan dan cara mendukung keberlanjutan? <br />
+        Selamat datang! Ingin tahu lebih banyak tentang <br class="hidden md:inline"/>
+        batik ramah lingkungan dan cara mendukung keberlanjutan? <br class="hidden md:inline"/>
         Tanyakan apa saja!
       </p>
     </div>
   </section>
 
   <div class="flex flex-col h-screen w-full p-4 md:p-10">
-    <div
-      class="flex-1 overflow-auto p-4 border-2 border-primary rounded-lg space-y-4"
-    >
+    <div class="flex-1 overflow-auto p-4 border-2 border-primary rounded-lg space-y-4">
       <div
         v-for="(message, index) in messages"
         :key="index"
-        class="flex items-end space-x-3"
+        class=""
         :class="{ 'justify-end': message.sender === 'user' }"
       >
-        <div v-if="message.sender === 'user'" class="flex items-end space-x-3">
-          <div
-            class="p-4 rounded-lg bg-[#B89158] text-white max-w-xs md:max-w-md"
-          >
-            <p>{{ message.text }}</p>
+        <div v-if="message.sender === 'user'" class="flex items-end justify-end space-x-3">
+          <div class="p-4 rounded-lg bg-[#B89158] text-white max-w-[75%] break-words">
+            <p class="text-justify">{{ message.text }}</p>
           </div>
-          <div
-            class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
-          >
-            <img
-              class="w-10 h-10 object-cover"
-              src="/image/icon/person-icon.png"
-              alt="User Icon"
-            />
+          <div class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center">
+            <img class="w-10 h-10 object-contain" src="/image/icon/person-icon.png" alt="User Icon" />
           </div>
         </div>
         <div v-else class="flex items-end space-x-3">
-          <div
-            class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
-          >
-            <img
-              class="w-10 h-10 object-cover"
-              src="/image/logo/logo 4.png"
-              alt="Sundara Logo"
-            />
+          <div class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center">
+            <img class="w-10 h-10 object-contain" src="/image/logo/logo 4.png" alt="Sundara Logo" />
           </div>
-          <div
-            class="p-4 rounded-lg bg-primary text-white max-w-xs md:max-w-md"
-          >
+          <div class="p-4 rounded-lg bg-primary text-white max-w-[75%] break-words">
             <p class="text-justify">{{ message.text }}</p>
           </div>
         </div>
       </div>
       <div v-if="isLoading" class="flex items-center space-x-3">
-        <div
-          class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center"
-        >
-          <img
-            class="w-10 h-10 object-cover"
-            src="/image/logo/logo 4.png"
-            alt="Sundara Logo"
-          />
+        <div class="w-10 h-10 rounded-full overflow-hidden border bg-[#D9D9D9] flex justify-center items-center">
+          <img class="w-10 h-10 object-contain" src="/image/logo/logo 4.png" alt="Sundara Logo" />
         </div>
         <div class="p-3 rounded-full border bg-primary flex space-x-1">
           <span class="dot w-2 h-2 bg-white rounded-full animate-bounce"></span>
-          <span
-            class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-150"
-          ></span>
-          <span
-            class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-300"
-          ></span>
+          <span class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-150"></span>
+          <span class="dot w-2 h-2 bg-white rounded-full animate-bounce delay-300"></span>
         </div>
       </div>
     </div>
@@ -87,7 +59,7 @@
         <input
           v-model="userInput"
           @keyup.enter="sendMessage"
-          class="flex-1 h-10 px-3 border-2 border-primary rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          class="flex-1 h-10 px-3 border-2 border-primary rounded-lg outline-none focus:ring-1 focus:ring-primary text-sm md:text-base"
           placeholder="Tulis pesan..."
         />
         <button class="p-2" @click="sendMessage">

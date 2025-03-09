@@ -7,8 +7,8 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">List Produk</h1>
       <p>
-        Temukan beragam batik berkualitas, dari batik baru, second, <br />
-        hingga koleksi ReBatik—mengusung tradisi, keberlanjutan, <br />
+        Temukan beragam batik berkualitas, dari batik baru, second, <br class="hidden md:inline"/>
+        hingga koleksi ReBatik—mengusung tradisi, keberlanjutan, <br class="hidden md:inline"/>
         dan gaya ramah lingkungan.
       </p>
     </div>
@@ -103,25 +103,23 @@
         </div>
       </div>
     </div>
-    <div
-      class="lg:col-span-3 col-span-4 grid sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-5"
-    >
+    <div class="lg:col-span-3 col-span-4 grid sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-5">
       <div>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 3.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Bunga</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Bunga</h3>
                 <p class="text-gray-600 text-sm">M-XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 100.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 100.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (1)</span>
@@ -138,19 +136,19 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 4.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Angsa</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Angsa</h3>
                 <p class="text-gray-600 text-sm">XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 125.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 125.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">-</span>
@@ -167,19 +165,19 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 2.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Garuda</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Garuda</h3>
                 <p class="text-gray-600 text-sm">S-3XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 350.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 350.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (100)</span>
@@ -198,19 +196,19 @@
       <div>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/rebatik 1.png"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Tas Kain</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Tas Kain</h3>
                 <p class="text-gray-600 text-sm">-</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 25.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 25.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (100)</span>
@@ -227,19 +225,19 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 6.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Burung</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Burung</h3>
                 <p class="text-gray-600 text-sm">L-XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 150.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 150.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5(1)</span>
@@ -256,19 +254,19 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/rebatik 3.png"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Topi Fashion</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Topi Fashion</h3>
                 <p class="text-gray-600 text-sm">S-3XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 15.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 15.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (100)</span>
@@ -287,19 +285,19 @@
       <div>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 5.jpg"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Kawung</h3>
                 <p class="text-gray-600 text-sm">M</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 150.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 150.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">-</span>
@@ -314,22 +312,21 @@
             </div>
           </div>
         </RouterLink>
-
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/rebatik 2.png"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Tas Belanja</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Tas Belanja</h3>
                 <p class="text-gray-600 text-sm">XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 20.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 20.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (100)</span>
@@ -346,19 +343,19 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden"
           >
             <img
-              class="w-full h-64 object-cover rounded-b"
+              class="w-full aspect-[4/3] object-cover"
               src="/image/produk/kemeja 1.png"
               alt="Batik Motif Kawung"
             />
             <div class="p-4">
-              <div class="flex justify-between items-center">
-                <h3 class="text-lg font-semibold">Batik Motif Kawung</h3>
+              <div class="flex justify-between items-center min-h-[56px]">
+                <h3 class="text-lg font-semibold min-h-[48px]">Batik Motif Kawung</h3>
                 <p class="text-gray-600 text-sm">S-3XL</p>
               </div>
-              <p class="text-gray-800 font-bold">Rp. 350.000</p>
+              <p class="text-gray-800 font-bold min-h-[24px]">Rp. 350.000</p>
               <div class="flex items-center mt-2">
                 <span class="text-yellow-500">★</span>
                 <span class="text-gray-600 ml-1">9.5 (100)</span>
