@@ -8,7 +8,7 @@ import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
 import Keranjang from "../views/keranjang.vue";
 import Checkout from "../views/Checkout.vue";
-import DetailProduk from "../views/detailProduk.vue";
+import DetailProduk from "../views/DetailProduk.vue";
 import Profile from "../views/profile.vue";
 import ReBatik from "../views/reBatik.vue";
 import BaTrift from "../views/baThrift.vue";

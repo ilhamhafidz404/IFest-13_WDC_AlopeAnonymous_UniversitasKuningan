@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center min-h-[50vh]"
+    class="relative text-center py-24 text-sekunder font-primary bg-cover bg-center lg:min-h-[50vh]"
     style="
       background-image: url('/image/hero.png');
       background-size: cover;
@@ -87,7 +87,7 @@
         <input
           v-model="userInput"
           @keyup.enter="sendMessage"
-          class="flex-1 h-10 px-3 border-2 border-primary rounded-lg outline-none focus:ring focus:ring-primary text-sm md:text-base"
+          class="flex-1 h-10 px-3 border-2 border-primary rounded-lg outline-none focus:ring-offset-1 focus:ring-primary-offset-1 text-sm md:text-base"
           placeholder="Tulis pesan..."
         />
         <button class="p-2" @click="sendMessage">
