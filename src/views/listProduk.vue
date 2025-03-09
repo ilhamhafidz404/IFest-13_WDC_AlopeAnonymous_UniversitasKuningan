@@ -254,7 +254,7 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full aspect-[4/3] object-cover"
@@ -343,7 +343,7 @@
         </RouterLink>
         <RouterLink to="detailProduk">
           <div
-            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden"
+            class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
           >
             <img
               class="w-full aspect-[4/3] object-cover"
