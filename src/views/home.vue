@@ -252,7 +252,7 @@
         <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-6">
           <RouterLink to="detailProduk">
             <div
-              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
@@ -285,7 +285,7 @@
           </RouterLink>
           <RouterLink to="detailProduk">
             <div
-              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
@@ -318,7 +318,7 @@
           </RouterLink>
           <RouterLink to="detailProduk">
             <div
-              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10 dark:bg-gray-700"
+              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden mb-10"
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
@@ -352,7 +352,7 @@
 
           <RouterLink to="detailProduk">
             <div
-              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden dark:bg-gray-700"
+              class="bg-white border border-primary rounded-lg shadow-lg overflow-hidden"
             >
               <img
                 class="w-full h-64 object-cover rounded-b"
