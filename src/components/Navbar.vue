@@ -9,7 +9,11 @@
     <div class="container mx-auto py-4 flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
-        <img :src="logo" alt="Logo" class="lg:h-10 h-9 transition-all duration-300" />
+        <img
+          :src="logo"
+          alt="Logo"
+          class="lg:h-10 h-9 transition-all duration-300"
+        />
       </div>
 
       <!-- Menu pada layar besar -->
@@ -24,8 +28,12 @@
         <li>
           <router-link to="chatbot" class="nav-link">Chat Bot</router-link>
         </li>
-        <li><router-link to="reBatik" class="nav-link">ReBatik</router-link></li>
-        <li><router-link to="baThrift" class="nav-link">BaThrift</router-link></li>
+        <li>
+          <router-link to="reBatik" class="nav-link">ReBatik</router-link>
+        </li>
+        <li>
+          <router-link to="baThrift" class="nav-link">BaThrift</router-link>
+        </li>
       </ul>
 
       <!-- Tombol ikon di layar besar -->
@@ -37,7 +45,7 @@
           <i class="fas fa-shopping-cart text-xl"></i>
         </RouterLink>
         <RouterLink
-        to="profile"
+          to="profile"
           :class="{ 'text-white': !scrolled, 'text-primary': scrolled }"
         >
           <i class="fas fa-user text-xl"></i>
@@ -92,14 +100,17 @@
           >
         </li>
         <li>
-          <router-link to="baThrift" class="nav-link" @click="isMenuOpen = false"
+          <router-link
+            to="baThrift"
+            class="nav-link"
+            @click="isMenuOpen = false"
             >BaThrift</router-link
           >
         </li>
       </ul>
 
       <div class="flex justify-center space-x-6 mt-4">
-        <router-link to="keranjang" class="text-primary">
+        <router-link to="/keranjang" class="text-primary">
           <i class="fas fa-shopping-cart text-xl"></i>
         </router-link>
         <router-link to="profile" class="text-primary">

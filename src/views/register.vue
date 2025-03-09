@@ -4,24 +4,22 @@
 </script> -->
 
 <template>
-  <div
-    class="bg-primary h-screen flex justify-center items-center px-4"
-  >
+  <div class="bg-primary h-screen flex justify-center items-center px-4">
     <div
       class="h-auto md:h-5/6 w-full max-w-4xl flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl"
     >
       <div
         class="w-full md:w-1/2 flex justify-center items-center flex-col text-center text-white relative py-10"
-        :style="`background-image: url; background-size: cover; background-position: center;`"
+        :style="`background-image: url(/image/half-batik-bg.png); background-size: cover; background-position: center;`"
       >
         <div class="absolute inset-0 bg-black/50"></div>
         <div
           class="w-5/6 flex justify-center items-center flex-col text-center relative z-10"
         >
           <img
-            src=""
+            src="/image/logo/logo 4.png"
             alt="Sundara Batik Logo"
-            class="w-20 sm:w-24 h-auto mb-4"
+            class="w-14 sm:w-12 h-auto mb-4"
           />
           <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
             Selamat Datang Di

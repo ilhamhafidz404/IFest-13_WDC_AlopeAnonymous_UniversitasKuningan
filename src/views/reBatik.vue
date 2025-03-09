@@ -142,7 +142,7 @@
 
           <button
             type="submit"
-            class="mt-6 w-full bg-white border-primary border-2 text-primary py-2 rounded-lg hover:bg-primary hover:text-white"
+            class="mt-6 w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90"
           >
             Submit
           </button>

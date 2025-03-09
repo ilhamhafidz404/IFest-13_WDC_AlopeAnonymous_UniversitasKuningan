@@ -132,7 +132,7 @@
             class="w-full mb-4 p-2 border rounded-md border-primary"
           />
           <button
-            class="w-full py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
+            class="w-full py-2 px-6 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
           >
             Update
           </button>
@@ -148,8 +148,10 @@
           <select class="w-full p-2 mb-2 border-primary border-2 rounded-md">
             <option>ReBatik Discount 10%</option>
           </select>
-          <div class=" border-2 border-primary p-4 sm:p-6 rounded-md shadow-lg">
-            <h2 class="font-semibold text-lg sm:text-2xl mb-6">Total Belanja</h2>
+          <div class="border-2 border-primary p-4 sm:p-6 rounded-md shadow-lg">
+            <h2 class="font-semibold text-lg sm:text-2xl mb-6">
+              Total Belanja
+            </h2>
             <div class="text-xs sm:text-sm space-y-4">
               <div class="flex justify-between">
                 <span>Subtotal keranjang</span>
@@ -172,11 +174,13 @@
               <span>TOTAL</span>
               <span>Rp. 1.039.500</span>
             </div>
-            <button
-            class="w-full mt-2 py-2 px-6 border-2 text-primary border-primary rounded-lg hover:text-white hover:bg-primary transition"
-          >
-            Checkout
-          </button>
+
+            <router-link
+              to="Checkout"
+              class="w-full mt-10 py-3 px-3 flex justify-center bg-primary text-white rounded-md hover:bg-primary/90 transition"
+            >
+              Check Out
+            </router-link>
           </div>
         </div>
       </div>

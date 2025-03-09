@@ -23,7 +23,9 @@
     <div
       class="px-4 sm:px-10 lg:px-20 mt-5 container mx-auto p-6 border-2 border-primary bg-white shadow-xl rounded-lg"
     >
-      <h2 class="text-xl sm:text-2xl font-medium mb-6 text-gray-900">Produk Dipesan</h2>
+      <h2 class="text-xl sm:text-2xl font-medium mb-6 text-gray-900">
+        Produk Dipesan
+      </h2>
 
       <div class="hidden sm:grid grid-cols-4 font-bold text-gray-900 mb-4">
         <div class="text-left">Produk</div>
@@ -41,8 +43,12 @@
             <div>
               <p class="text-sm">{{ item.category }}</p>
               <p class="text-base sm:text-lg font-semibold">{{ item.name }}</p>
-              <p class="text-sm sm:text-md text-gray-700">Kondisi  {{ item.condition }}</p>
-              <p class="text-sm sm:text-md text-gray-700">Ukuran  {{ item.size }}</p>
+              <p class="text-sm sm:text-md text-gray-700">
+                Kondisi {{ item.condition }}
+              </p>
+              <p class="text-sm sm:text-md text-gray-700">
+                Ukuran {{ item.size }}
+              </p>
             </div>
           </div>
           <div class="font-bold text-center text-sm sm:text-base">
@@ -105,7 +111,9 @@
       class="px-20 mt-10 mb-20 container border-2 border-primary mx-auto p-6 bg-wwhite shadow-xl rounded-lg"
     >
       <h2 class="text-2xl font-bold mb-6">Diskon / Promo</h2>
-      <select class="w-full p-2 border rounded-lg">
+      <select
+        class="w-full p-2 border border-primary focus:ring-offset-1 focus:ring-primary-offset-1 rounded-lg"
+      >
         <option>ReBatik Discount 10%</option>
       </select>
     </div>

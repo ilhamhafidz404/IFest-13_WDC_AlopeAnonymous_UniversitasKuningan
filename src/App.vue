@@ -2,7 +2,6 @@
   <main>
     <Navbar></Navbar>
     <router-view></router-view>
-
     <Footer></Footer>
   </main>
 </template>
