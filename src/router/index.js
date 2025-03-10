@@ -1,76 +1,64 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-// page
-import Home from "../views/Home.vue";
-import Login from "../views/Login.vue";
-import Register from "../views/Register.vue";
-import Chatbot from "../views/Chatbot.vue";
-import ListProduk from "../views/ListProduk.vue";
-import Keranjang from "../views/Keranjang.vue";
-import Checkout from "../views/checkout.vue";
-import DetailProduk from "../views/DetailProduk.vue";
-import Profile from "../views/Profile.vue";
-import ReBatik from "../views/Rebatik.vue";
-import BaThrift from "../views/Bathrift.vue";
-
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: "/",
       name: "home",
-      component: Home,
+      component: () => import("../views/Home.vue"),
     },
     {
-      path: "/listProduk",
+      path: "/list-produk",
       name: "listProduk",
-      component: ListProduk,
+      component: () => import("../views/ListProduk.vue"),
     },
     {
-      path: "/reBatik",
+      path: "/rebatik",
       name: "reBatik",
-      component: ReBatik,
+      component: () => import("../views/Rebatik.vue"),
     },
     {
       path: "/login",
       name: "login",
-      component: Login,
+      component: () => import("../views/Login.vue"),
     },
     {
       path: "/register",
       name: "register",
-      component: Register,
+      component: () => import("../views/Register.vue"),
     },
     {
       path: "/chatbot",
       name: "chatbot",
-      component: Chatbot,
+      component: () => import("../views/Chatbot.vue"),
     },
     {
       path: "/keranjang",
       name: "keranjang",
-      component: Keranjang,
+      component: () => import("../views/Keranjang.vue"),
     },
     {
       path: "/checkout",
       name: "checkout",
-      component: Checkout,
+      component: () => import("../views/Checkout.vue"),
     },
     {
-      path: "/detailProduk",
-      name: "detailproduk",
-      component: DetailProduk,
+      path: "/detail-produk",
+      name: "detailProduk",
+      component: () => import("../views/DetailProduk.vue"),
     },
     {
       path: "/profile",
       name: "profile",
-      component: Profile,
+      component: () => import("../views/Profile.vue"),
     },
     {
-      path: "/baThrift",
-      name: "baTrift",
-      component: BaThrift,
+      path: "/bathrift",
+      name: "baThrift",
+      component: () => import("../views/Bathrift.vue"),
     },
   ],
 });
+
 export default router;
