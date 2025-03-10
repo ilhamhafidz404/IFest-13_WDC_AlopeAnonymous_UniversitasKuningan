@@ -6,7 +6,7 @@ import Login from "../views/login.vue";
 import Register from "../views/register.vue";
 import Chatbot from "../views/chatbot.vue";
 import ListProduk from "../views/listProduk.vue";
-import Keranjang from "../views/keranjang.vue";
+import Keranjang from "../views/Keranjang.vue";
 import Checkout from "../views/checkout.vue";
 import DetailProduk from "../views/detailProduk.vue";
 import Profile from "../views/profile.vue";
