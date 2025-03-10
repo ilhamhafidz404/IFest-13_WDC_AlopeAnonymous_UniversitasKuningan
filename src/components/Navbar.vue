@@ -110,13 +110,21 @@
       </ul>
 
       <div class="flex justify-center space-x-6 mt-4">
-        <router-link to="/keranjang" class="text-primary">
+        <router-link
+          to="/keranjang"
+          class="text-primary"
+          @click="isMenuOpen = false"
+        >
           <i class="fas fa-shopping-cart text-xl"></i>
         </router-link>
-        <router-link to="profile" class="text-primary">
+        <router-link
+          to="profile"
+          class="text-primary"
+          @click="isMenuOpen = false"
+        >
           <i class="fas fa-user text-xl"></i>
         </router-link>
-        <button class="text-primary">
+        <button class="text-primary" @click="isMenuOpen = false">
           <i class="fas fa-sign-out-alt text-xl"></i>
         </button>
       </div>

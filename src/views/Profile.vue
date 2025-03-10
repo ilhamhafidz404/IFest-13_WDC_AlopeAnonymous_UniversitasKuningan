@@ -352,19 +352,19 @@
             *Foto barang yang ingin dikembalikan (jika cacat atau salah kirim)
           </p>
         </div>
-        <div class="border p-6 rounded-lg shadow-lg">
-          <table class="w-full">
+        <div class="border p-4 md:p-6 rounded-lg shadow-lg">
+          <table class="w-full text-sm md:text-base">
             <thead>
               <tr>
-                <th class="text-left">Produk</th>
-                <th class="text-center">Jumlah</th>
-                <th class="text-center">Total</th>
-                <th></th>
+                <th class="text-left p-2">Produk</th>
+                <th class="text-center p-2">Jumlah</th>
+                <th class="text-center p-2">Total</th>
+                <th class="p-2"></th>
               </tr>
             </thead>
             <tbody>
               <tr class="border-t">
-                <td class="py-4 flex items-center">
+                <td class="py-4 flex flex-col md:flex-row items-center gap-4">
                   <div class="relative w-16 h-16">
                     <img
                       src="/image/produk/kemeja 1.png"
@@ -374,18 +374,18 @@
                     <img
                       src="/image/page/wanita1.png"
                       alt="Batik Pekalongan"
-                      class="absolute -bottom-5 -right-3 w-full h-full rounded-lg shadow"
+                      class="absolute -bottom-4 -right-3 w-16 h-16 rounded-lg shadow"
                     />
                   </div>
-                  <div class="ml-4">
+                  <div>
                     <p class="text-sm text-gray-500">PRIA</p>
                     <p class="font-semibold">Batik Motif Kawung</p>
                     <p class="text-sm text-gray-500">WANITA</p>
                     <p class="font-semibold">Batik Pekalongan</p>
                   </div>
                 </td>
-                <td class="text-center font-bold">3</td>
-                <td class="text-center text-primary font-bold text-lg">
+                <td class="text-center font-bold p-2">3</td>
+                <td class="text-center text-primary font-bold text-lg p-2">
                   RP. 1.125.000
                 </td>
               </tr>

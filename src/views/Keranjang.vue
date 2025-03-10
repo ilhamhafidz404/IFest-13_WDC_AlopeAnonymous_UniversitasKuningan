@@ -7,8 +7,10 @@
     <div class="relative z-10">
       <h1 class="font-sekunder text-4xl my-5">Keranjang</h1>
       <p>
-        Cek kembali produk pilihan Anda dan jadilah bagian <br />
-        dari perubahan! Dukung keberlanjutan dengan <br />
+        Cek kembali produk pilihan Anda dan jadilah bagian
+        <br class="hidden md:inline" />
+        dari perubahan! Dukung keberlanjutan dengan
+        <br class="hidden md:inline" />
         memilih batik ramah lingkungan
       </p>
     </div>
