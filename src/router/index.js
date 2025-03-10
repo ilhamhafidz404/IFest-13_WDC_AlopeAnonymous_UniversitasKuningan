@@ -1,17 +1,17 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 // page
-import Home from "../views/home.vue";
-import Login from "../views/login.vue";
-import Register from "../views/register.vue";
-import Chatbot from "../views/chatbot.vue";
-import ListProduk from "../views/listProduk.vue";
-import Keranjang from "../views/keranjang.vue";
+import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
+import Chatbot from "../views/Chatbot.vue";
+import ListProduk from "../views/ListProduk.vue";
+import Keranjang from "../views/Keranjang.vue";
 import Checkout from "../views/checkout.vue";
-import DetailProduk from "../views/detailProduk.vue";
-import Profile from "../views/profile.vue";
-import ReBatik from "../views/reBatik.vue";
-import BaThrift from "../views/baThrift.vue";
+import DetailProduk from "../views/DetailProduk.vue";
+import Profile from "../views/Profile.vue";
+import ReBatik from "../views/Rebatik.vue";
+import BaThrift from "../views/Bathrift.vue";
 
 const router = createRouter({
   history: createWebHistory(),
