@@ -9,7 +9,7 @@ import ListProduk from "../views/listProduk.vue";
 import Keranjang from "../views/Keranjang.vue";
 import Checkout from "../views/Checkout.vue";
 import DetailProduk from "../views/DetailProduk.vue";
-import Profile from "../views/profile.vue";
+import Profile from "../views/Profile.vue";
 import ReBatik from "../views/reBatik.vue";
 import BaThrift from "../views/baThrift.vue";
 
